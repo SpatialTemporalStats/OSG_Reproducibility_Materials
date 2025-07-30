@@ -7,3 +7,10 @@ As essential resources for studying climate change and forecasting weather, rean
 ## Contents
 #### "Wrapper.R"
 This file outlines the reproducibility workflow of the article. 
+
+## Data
+### Abstract
+ERA5 is the fifth-generation ECMWF reanalysis, providing comprehensive and consistent descriptions of Earth’s climate and weather across atmospheric, land, and oceanic variables. The ERA5 ensemble consists of 10 members at a horizontal spatial resolution of $0.5^\circ$ and a temporal resolution of 3 hours, representing ERA5 uncertainty through perturbed observations and model physics. This work uses 10m u- and v-component wind speed ERA5 ensembles over the Arabian Peninsula for the period 2014–2023, which were downloaded in 2024.
+
+### Availability
+
