@@ -22,7 +22,7 @@ Alternatively, readers may download the latest version from the [CDS download pa
 
 (1) Log in to the above CDS download page. 
 
-(2) Select *Product type* as *Ensemble members*, *Variable* as *10m u-component of wind* and *10m v-component of wind*, and *Year* as *2014*. For *Month*, *Day*, and *Time*, click *Select all*. Specify *Sub-region extraction* with *North=30*, *South=12*, *West=33*, *East=60*. Choose *Data format* as *NetCDF4(Experimental)*, *Download format* as *Unarchieved (not zipped if single file)*. Click *Submit form*. 
+(2) Select *Product type* as *Ensemble members*, *Variable* as *10m u-component of wind* and *10m v-component of wind*, and *Year* as *2014*. For *Month*, *Day*, and *Time*, click *Select all*. Specify *Sub-region extraction* with *North=30*, *South=12*, *West=33*, and *East=60*. Choose *Data format* as *NetCDF4(Experimental)*, *Download format* as *Unarchieved (not zipped if single file)*. Click *Submit form*. 
 
 (3) Check *Your requests*. Once the *Status* changes to *Complete*, download the file. 
 
