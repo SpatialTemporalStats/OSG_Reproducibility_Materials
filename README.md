@@ -26,7 +26,7 @@ Alternatively, readers may download the latest version from the [CDS download pa
 
 (3) Check *Your requests*. Once the *Status* changes to *Complete*, download the file. 
 
-(4) After downloading, rename the file as "WindSpeeduv_ARP_2014.nc". Save the file to the sub-repository "Data".
+(4) After downloading, rename the file as ``WindSpeeduv_ARP_2014.nc". Save the file to the sub-repository "Data".
 
 
 
