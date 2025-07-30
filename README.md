@@ -10,7 +10,23 @@ This file outlines the reproducibility workflow of the article.
 
 ## Data
 ### Abstract
-ERA5 is the fifth-generation ECMWF reanalysis, providing comprehensive and consistent descriptions of Earth’s climate and weather across atmospheric, land, and oceanic variables. The ERA5 ensemble consists of 10 members at a horizontal spatial resolution of $0.5^\circ$ and a temporal resolution of 3 hours, representing ERA5 uncertainty through perturbed observations and model physics. This work uses 10m u- and v-component wind speed ERA5 ensembles over the Arabian Peninsula for the period 2014–2023, which were downloaded in 2024.
+ERA5 is the fifth-generation ECMWF reanalysis, providing comprehensive and consistent descriptions of Earth’s climate and weather across atmospheric, land, and oceanic variables. The ERA5 ensemble consists of 10 members at a horizontal spatial resolution of 0.5 degree and a temporal resolution of 3 hours, representing ERA5 uncertainty through perturbed observations and model physics. This work uses 10m u- and v-component wind speed ERA5 ensembles over the Arabian Peninsula for the period 2014–2023, which were downloaded in 2024.
 
-### Availability
+### Availability 
+The data used in this work are in netCDF format and are available online at: https://zenodo.org/records/16618043. 
+
+### Description
+ERA5 data and ERA5 ensembles are continuously updated by incorporating new data and revising historical data to enhance their quality. Therefore, the ERA5 ensembles used in this work, downloaded in 2024, differ slightly from those currently available on the Climate Data Store (CDS) website. Although these differences are minimal, we recommend using the [2024 download](https://zenodo.org/records/16618043) to reproduce the results.
+
+Alternatively, readers may download the latest version from the [CDS download page](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download). Taking the 2014 data as an example, we provide the download procedure below.
+* Log in to the above CDS download page. 
+(2) Select “Product type” as “Ensemble members”, “Variable” as “10m u-component of wind” and “10m v-component of wind”, and “Year” as “2014”. For “Month”, “Day”, and “Time”, click “Select all”. Specify “Sub-region extraction” with “North=30”, “South=12”, “West=33”, “East=60”. Choose “Data format” as “NetCDF4(Experimental)”, “Download format” as “Unarchieved (not zipped if single file)”. Click “Submit form”. 
+(3) Check “Your requests”. Once the “Status” changes to “Complete”, download the file. 
+(4) After downloading, rename the file as “WindSpeeduv_ARP_2014.nc”. Save the file to the sub-repository “Data”.
+
+
+
+
+
+
 
