@@ -35,6 +35,15 @@ Alternatively, readers may download the latest version from the [CDS download pa
 (4) After downloading, rename the file as "WindSpeeduv_ARP_2014.nc". Save the file to the sub-repository "Data".
 
 
+## Reproducibility Workflow
+Please begin by downloading the entire repository as the file "OSG_Reproducibility_Materials.zip" and extracting it as a folder named "OSG_Reproducibility_Materials". Then, please set your working directory to this folder. Next, please download the ERA5 ensembles from https://zenodo.org/records/16618043 and save them to sub-directory "OSG_Reproducibility_Materials/Data". Finally, please follow the "Wrapper.R" file to load necessary R packages and function, process data, and reproduce each figure and table sequentially. The computation time reported below was recorded using R (3.6.3) running on a machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
+
+#### Process the data
+Please refer to the "Wrapper.R" file to process the downloaded data. The total computational time is approximately 1.46 minutes. For more detailed code and computational time, please refer to the file "Data_Treatment.R" in the sub-repository "Data".
+
+#### Reproduce Figure 1 in Section 2
+Figure 1 demonstrates the patterns of various kinds of rep-points under two location sets. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 39.1 minutes, with the majority of the time spent obtaining k-DPPs. For more detailed code and computational time, please refer to the file "SP_Demo.R" in the sub-repository "SP_Demo".
+
 
 
 
