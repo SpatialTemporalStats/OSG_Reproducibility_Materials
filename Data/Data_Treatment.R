@@ -2,7 +2,7 @@
 # This file includes all steps to process the data                             #
 # Input: Downloaded ERA5 ensembles named e.g., "WindSpeeduv_ARP_2014.nc"       #
 # Output: Processed data and related information used in this work,            #
-#         e.g., Windu.ARP, Windv.ARP, Dat.loc.arp                              #   
+#         e.g., Windu.ARP, Windv.ARP, Dat.loc.arp, Dat.loc                     #   
 ################################################################################
 # Necessary packages
 library(sp)
