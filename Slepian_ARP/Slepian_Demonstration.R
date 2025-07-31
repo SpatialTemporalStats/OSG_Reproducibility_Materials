@@ -56,7 +56,7 @@ PT.1=ggplot() + facet_wrap(~ group,ncol = 3, dir="h")+
                    legend.key.width=unit(0.5,"line"),
                    legend.key.height=unit(2,"line"))+
   ylab("Latitude")+xlab("Longitude")
-PT.1                         # Save to 6.00*4.64 Slepian_Bases_A300.pdf    
+print(PT.1)                         # Save to 6.00*4.64 Slepian_Bases_A300.pdf    
 # t2=proc.time()[[3]]
 # t2-t1=1.859 
 
@@ -140,7 +140,7 @@ PT.2=ggplot() +
                    legend.key.height=unit(1,"line"))+
   geom_hline(yintercept = 0.01, size=0.5, linetype=2, color="#E41A1C")+
   xlab(expression(alpha))+ylab(expression(lambda[alpha]))
-PT.2       # Size 6.70*2.70
+print(PT.2)       # Size 6.70*2.70
 # t2=proc.time()[[3]]
 # t2-t1=0.917 
 
