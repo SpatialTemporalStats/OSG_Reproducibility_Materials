@@ -11,7 +11,7 @@ This file outlines the reproducibility workflow of the article.
 #### Data
 This sub-repository is used to store the downloaded ERA5 ensemble data and to provide detailed instructions for processing them.
 * "Data_Treatment.R": R script for processing the downloaded data
-* "IPCC-WGI-reference-regions-v4_R.rda": an R data file for identifying the Arabian Pennisula region (ARP), provided by [Iturbide et al. (2020)](https://essd.copernicus.org/articles/12/2959/2020/essd-12-2959-2020-assets.html).
+* "IPCC-WGI-reference-regions-v4_R.rda": an R data file for identifying the Arabian Pennisula region (ARP), provided by [Iturbide et al. (2020)](https://essd.copernicus.org/articles/12/2959/2020/essd-12-2959-2020-assets.html)
 
 #### Data_Demonstration
 This sub-repository provides the R script for reproducing Figure 1, which demonstrates several statistical characteristics of the u- and v-component wind speed ERA5 ensembles.
@@ -45,7 +45,7 @@ Please begin by downloading the entire repository as "OSG_Reproducibility_Materi
 Please refer to the "Wrapper.R" file to process the downloaded data. The total computational time is approximately 1.46 minutes. For more detailed code and computational time, please refer to the file "Data_Treatment.R" in the sub-repository "Data".
 
 #### Reproduce Figure 1 in Section 2
-Figure 1 demonstrates the patterns of various kinds of rep-points under two location sets. Please refer to the "Wrapper.R" file for their reproducibility command. The total computational time is approximately 39.1 minutes, with the majority of the time spent obtaining k-DPPs. For more detailed code and computational time, please refer to the file "SP_Demo.R" in the sub-repository "SP_Demo".
+Figure 1 demonstrates several statistical characteristics of the u- and v-component wind speed ERA5 ensembles. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 26.49 minutes. For more detailed code and computational time, please refer to the file "Data_Demonstration.R" in the sub-repository "Data_Demonstration".
 
 
 
