@@ -57,11 +57,12 @@ PT.1=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(0.5,"line"),
                    legend.key.height=unit(0.7,"line"))+
   labs(fill=expression(ms^{-1}))+ylab("Latitude")+xlab("Longitude")
-PT.1+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
+PT.1=PT.1+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
   annotate("text",x=56,y=20,label="GEP",size=2.5)+
   annotate("text",x=40.5,y=20.5,label="GWC",size=2.5)+
   annotate("text",x=45,y=22,label="GCP",size=2.5)+
   annotate("text",x=43,y=28.5,label="GND",size=2.5)         # Save as 6.30*3.00 Winduv_EnMean.pdf
+print(PT.1)
 # t2=proc.time()[[3]]
 # t2-t1=1.058
 
@@ -93,11 +94,12 @@ PT.2=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(0.5,"line"),
                    legend.key.height=unit(0.7,"line"))+
   labs(fill=expression(ms^{-1}))+ylab("Latitude")+xlab("Longitude")
-PT.2+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
+PT.2=PT.2+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
   annotate("text",x=56,y=20,label="GEP",size=2.5)+
   annotate("text",x=40.5,y=20.5,label="GWC",size=2.5)+
   annotate("text",x=45,y=22,label="GCP",size=2.5)+
   annotate("text",x=43,y=28.5,label="GND",size=2.5)        # Save to 6.30*3.00 Winduv_EnSD.pdf
+print(PT.2)
 # t2=proc.time()[[3]]
 # t2-t1=1.217
 
@@ -175,7 +177,7 @@ PT.3=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(1,"line"),
                    legend.key.height=unit(0.7,"line"))+
   guides(color = guide_legend(ncol = 2))
-PT.3                       # Save to 6.30*3.00 Winduv_AnnualCycle.pdf
+print(PT.3)                       # Save to 6.30*3.00 Winduv_AnnualCycle.pdf
 # t2=proc.time()[[3]]
 # t2-t1=2.7
 
@@ -227,7 +229,7 @@ PT.4=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(0.8,"line"),
                    legend.key.height=unit(0.6,"line"))+
   guides(color = guide_legend(ncol = 2))
-PT.4                      # 6.30*3.00 Winduv_TimeSeries.pdf
+print(PT.4)                      # 6.30*3.00 Winduv_TimeSeries.pdf
 # t2=proc.time()[[3]]
 # t2-t1=0.875
 
@@ -267,11 +269,12 @@ PT.5=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(0.5,"line"),
                    legend.key.height=unit(0.7,"line"))+
   labs(fill=" ")+ylab("Latitude")+xlab("Longitude")
-PT.5+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
+PT.5=PT.5+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
   annotate("text",x=56,y=20,label="GEP",size=2.5)+
   annotate("text",x=40.5,y=20.5,label="GWC",size=2.5)+
   annotate("text",x=45,y=22,label="GCP",size=2.5)+
   annotate("text",x=43,y=28.5,label="GND",size=2.5)        # Save to 6.30*3.00 Winduv_Skew.pdf
+print(PT.5)
 # Plot Figure 1(f)
 dataF=data.frame(lon=rep(Dat.loc.arp[,1],times=2),lat=rep(Dat.loc.arp[,2],times=2),
                  WindSpeed=c(KurtU,KurtV)-3,
@@ -293,11 +296,12 @@ PT.6=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(0.5,"line"),
                    legend.key.height=unit(0.7,"line"))+
   labs(fill=" ")+ylab("Latitude")+xlab("Longitude")
-PT.6+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
+PT.6=PT.6+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
   annotate("text",x=56,y=20,label="GEP",size=2.5)+
   annotate("text",x=40.5,y=20.5,label="GWC",size=2.5)+
   annotate("text",x=45,y=22,label="GCP",size=2.5)+
   annotate("text",x=43,y=28.5,label="GND",size=2.5)     # Save to 6.30*3.00 Winduv_Kurt.pdf
+print(PT.6)
 # t2=proc.time()[[3]]
 # t2-t1=1583.655 seconds (26.39425 minutes)
 
