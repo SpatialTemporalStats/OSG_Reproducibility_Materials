@@ -36,7 +36,7 @@ Alternatively, readers may download the latest version from the [CDS download pa
 
 
 ## Reproducibility Workflow
-Please begin by downloading the entire repository as the file "OSG_Reproducibility_Materials.zip" and extracting it as a folder named "OSG_Reproducibility_Materials". Then, please set your working directory to this folder. Next, please download the ERA5 ensembles from https://zenodo.org/records/16618043 and save them to sub-directory "OSG_Reproducibility_Materials/Data". Finally, please follow the "Wrapper.R" file to load necessary R packages and function, process data, and reproduce each figure and table sequentially. The computation time reported below was recorded using R (3.6.3) running on a machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
+Please begin by downloading the entire repository as "OSG_Reproducibility_Materials.zip" and extracting it into a folder named "OSG_Reproducibility_Materials". Then, please set your working directory to this folder. Next, please download the ERA5 ensembles from https://zenodo.org/records/16618043 and save them in the sub-repository "OSG_Reproducibility_Materials/Data". Finally, please follow the "Wrapper.R" file to load necessary R packages and functions, process the data, and reproduce each figure and table sequentially. The computation time reported below was recorded using R (3.6.3) running on a machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
 
 #### Process the data
 Please refer to the "Wrapper.R" file to process the downloaded data. The total computational time is approximately 1.46 minutes. For more detailed code and computational time, please refer to the file "Data_Treatment.R" in the sub-repository "Data".
