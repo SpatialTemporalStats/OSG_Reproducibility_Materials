@@ -1,6 +1,8 @@
 ################################################################################
 # This file includes all steps to reproduce Figure 2                           #
 ################################################################################
+# Please donwload the Slepian bases and eigenvalues used in this Figure from XXX.
+# Then, please save them to sub-repository "Slepian_ARP".
 # Necessary packages
 library(R.matlab)
 library(ggplot2)
