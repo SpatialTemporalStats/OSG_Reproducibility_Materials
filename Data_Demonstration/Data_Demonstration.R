@@ -40,7 +40,7 @@ dataP=data.frame(lon=rep(Dat.loc.arp[c(loc.gsm,loc.gep,loc.gwc,loc.gcp,loc.gnd),
 dataARP=data.frame(lon=rep(arabian_peninsula$long,times=2),lat=rep(arabian_peninsula$lat,times=2),
                    type=rep(arabian_peninsula$group,times=2),
                    group=as.factor(rep(c("U","V"),each=length(arabian_peninsula$long))))
-PT=ggplot()+facet_wrap(~ group, ncol = 2)+
+PT.1=ggplot()+facet_wrap(~ group, ncol = 2)+
   geom_raster(mapping=aes(lon, lat, fill = WindSpeed),data=dataF)+
   geom_path(mapping=aes(x = lon, y = lat, group = type), data=dataARP,size=0.3,color="darkgray")+
   geom_point(mapping = aes(lon, lat),shape=4,data=dataP)+
@@ -57,7 +57,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(0.5,"line"),
                    legend.key.height=unit(0.7,"line"))+
   labs(fill=expression(ms^{-1}))+ylab("Latitude")+xlab("Longitude")
-PT+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
+PT.1+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
   annotate("text",x=56,y=20,label="GEP",size=2.5)+
   annotate("text",x=40.5,y=20.5,label="GWC",size=2.5)+
   annotate("text",x=45,y=22,label="GCP",size=2.5)+
@@ -76,7 +76,7 @@ Windv.Ensd=apply(Windv.ARP[,,t.choose],2,sd)
 dataF=data.frame(lon=rep(Dat.loc.arp[,1],times=2),lat=rep(Dat.loc.arp[,2],times=2),
                  WindSpeed=c(Windu.Ensd,Windv.Ensd),
                  group=as.factor(rep(c("U","V"),each=nrow(Dat.loc.arp))))
-PT=ggplot()+facet_wrap(~ group, ncol = 2)+
+PT.2=ggplot()+facet_wrap(~ group, ncol = 2)+
   geom_raster(mapping=aes(lon, lat, fill = WindSpeed),data=dataF)+
   geom_path(mapping=aes(x = lon, y = lat, group = type), data=dataARP,size=0.3,color="darkgray")+
   geom_point(mapping = aes(lon, lat),shape=4,data=dataP)+
@@ -93,7 +93,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(0.5,"line"),
                    legend.key.height=unit(0.7,"line"))+
   labs(fill=expression(ms^{-1}))+ylab("Latitude")+xlab("Longitude")
-PT+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
+PT.2+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
   annotate("text",x=56,y=20,label="GEP",size=2.5)+
   annotate("text",x=40.5,y=20.5,label="GWC",size=2.5)+
   annotate("text",x=45,y=22,label="GCP",size=2.5)+
@@ -154,7 +154,7 @@ dataF=data.frame(Time=rep(1:12,times=5*2),
                  Temp=c(c(t(Windu.ARP.Monthly.EnTimeMean)),c(t(Windv.ARP.Monthly.EnTimeMean))),
                  Type=as.factor(rep(rep(c("GSM","GEP","GWC","GCP","GND"),each=12),times=2)),
                  group=as.factor(rep(c("U","V"),each=12*5)))
-PT=ggplot()+facet_wrap(~ group, ncol = 2)+
+PT.3=ggplot()+facet_wrap(~ group, ncol = 2)+
   geom_line(aes(x=Time,y=Temp,color=Type),data=dataF)+
   geom_point(aes(x=Time,y=Temp,color=Type),data=dataF)+
   xlab("Month")+ylab(expression(Wind~speed~(ms^{-1})))+
@@ -175,7 +175,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(1,"line"),
                    legend.key.height=unit(0.7,"line"))+
   guides(color = guide_legend(ncol = 2))
-PT                       # Save to 6.30*3.00 Winduv_AnnualCycle.pdf
+PT.3                       # Save to 6.30*3.00 Winduv_AnnualCycle.pdf
 # t2=proc.time()[[3]]
 # t2-t1=2.7
 
@@ -200,7 +200,7 @@ dataL=data.frame(Time=rep(tseqw,times=2*5),
                         apply(cbind(Windu.ARP[,loc.gnd,tseqw],Windv.ARP[,loc.gnd,tseqw]),2,mean)),
                  Type=as.factor(rep(c("GSM","GEP","GWC","GCP","GND"),each=2*length(tseqw))),
                  group=as.factor(rep(rep(c("U","V"),each=length(tseqw)),times=5)))
-PT=ggplot()+facet_wrap(~ group, ncol = 2)+
+PT.4=ggplot()+facet_wrap(~ group, ncol = 2)+
   geom_line(aes(x=Time,y=Temp1,linetype=LEN),colour=cbPalette[6],alpha=0.2,data=dataF)+
   geom_line(aes(x=Time,y=Temp2,linetype=LEN),colour=cbPalette[2],alpha=0.2,data=dataF)+
   geom_line(aes(x=Time,y=Temp3,linetype=LEN),colour=cbPalette[8],alpha=0.2,data=dataF)+
@@ -227,7 +227,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(0.8,"line"),
                    legend.key.height=unit(0.6,"line"))+
   guides(color = guide_legend(ncol = 2))
-PT                      # 6.30*3.00 Winduv_TimeSeries.pdf
+PT.4                      # 6.30*3.00 Winduv_TimeSeries.pdf
 # t2=proc.time()[[3]]
 # t2-t1=0.875
 
@@ -250,7 +250,7 @@ KurtV=sapply(1:nrow(Dat.loc.arp),Kurtfunc)
 dataF=data.frame(lon=rep(Dat.loc.arp[,1],times=2),lat=rep(Dat.loc.arp[,2],times=2),
                  WindSpeed=c(SkewU,SkewV),
                  group=as.factor(rep(c("U","V"),each=nrow(Dat.loc.arp))))
-PT=ggplot()+facet_wrap(~ group, ncol = 2)+
+PT.5=ggplot()+facet_wrap(~ group, ncol = 2)+
   geom_raster(mapping=aes(lon, lat, fill = WindSpeed),data=dataF)+
   geom_path(mapping=aes(x = lon, y = lat, group = type), data=dataARP,size=0.3,color="darkgray")+
   geom_point(mapping = aes(lon, lat),shape=4,data=dataP)+
@@ -267,7 +267,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(0.5,"line"),
                    legend.key.height=unit(0.7,"line"))+
   labs(fill=" ")+ylab("Latitude")+xlab("Longitude")
-PT+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
+PT.5+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
   annotate("text",x=56,y=20,label="GEP",size=2.5)+
   annotate("text",x=40.5,y=20.5,label="GWC",size=2.5)+
   annotate("text",x=45,y=22,label="GCP",size=2.5)+
@@ -276,7 +276,7 @@ PT+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
 dataF=data.frame(lon=rep(Dat.loc.arp[,1],times=2),lat=rep(Dat.loc.arp[,2],times=2),
                  WindSpeed=c(KurtU,KurtV)-3,
                  group=as.factor(rep(c("U","V"),each=nrow(Dat.loc.arp))))
-PT=ggplot()+facet_wrap(~ group, ncol = 2)+
+PT.6=ggplot()+facet_wrap(~ group, ncol = 2)+
   geom_raster(mapping=aes(lon, lat, fill = WindSpeed),data=dataF)+
   geom_path(mapping=aes(x = lon, y = lat, group = type), data=dataARP,size=0.3,color="darkgray")+
   geom_point(mapping = aes(lon, lat),shape=4,data=dataP)+
@@ -293,7 +293,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
                    legend.key.width=unit(0.5,"line"),
                    legend.key.height=unit(0.7,"line"))+
   labs(fill=" ")+ylab("Latitude")+xlab("Longitude")
-PT+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
+PT.6+annotate("text",x=46.5,y=14.5,label="GSM",size=2.5)+
   annotate("text",x=56,y=20,label="GEP",size=2.5)+
   annotate("text",x=40.5,y=20.5,label="GWC",size=2.5)+
   annotate("text",x=45,y=22,label="GCP",size=2.5)+
