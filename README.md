@@ -12,7 +12,7 @@ This file outlines the reproducibility workflow of the article.
 This sub-repository is used to store the downloaded ERA5 ensemble data and to provide detailed instructions for processing them.
 
 * "Data_Treatment.R": R script for processing the downloaded data
-* "IPCC-WGI-reference-regions-v4_R.rda": an R data file provided by [Iturbide et al. (2020)](https://essd.copernicus.org/articles/12/2959/2020/essd-12-2959-2020-assets.html) for identifying the Arabian Pennisula region (ARP)
+* "IPCC-WGI-reference-regions-v4_R.rda": an R data file for identifying the Arabian Pennisula region (ARP), provided by [Iturbide et al. (2020)](https://essd.copernicus.org/articles/12/2959/2020/essd-12-2959-2020-assets.html).
 
 ## Data
 ### Abstract
