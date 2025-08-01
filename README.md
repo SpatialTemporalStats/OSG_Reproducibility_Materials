@@ -18,8 +18,9 @@ This sub-repository provides the R script for reproducing Figure 1, which demons
 * "Data_Demonstration.R": R script for reproducing Figure 1
 
 #### Slepian_Demonstration
-This sub-repository provides the R script for reproducing Figure 2, which demonstrates Slepian bases and eigenvalues in the Slepian concentration problem.
+This sub-repository provides the R scripts for reproducing Figures 2 and 3, which demonstrates Slepian bases in the Slepian concentration problem and their performance. Additionally, this sub-repository is used to store the downloaded Slepian bases.
 * "Slepian_Demonstration.R": R script for reproducing Figure 2
+* "Slepian_Performance.R": R script for reproducing Figure 3
 
 
 ## Data
@@ -44,7 +45,12 @@ Alternatively, readers may download the latest version from the [CDS download pa
 
 
 ## Reproducibility Workflow
-Please begin by downloading the entire repository as "OSG_Reproducibility_Materials.zip" and extracting it into a folder named "OSG_Reproducibility_Materials". Then, please set your working directory to this folder. Next, please download the ERA5 ensembles from https://zenodo.org/records/16618043 and save them in the sub-repository "OSG_Reproducibility_Materials/Data". Finally, please follow the "Wrapper.R" file to load necessary R packages and functions, process the data, and reproduce each figure and table sequentially. The computation time reported below was recorded using R (3.6.3) running on a machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
+The "Wrapper.R" file outlines the reproducibility workflow of the article, including loading necessary R packages and functions, processing the data, and reproducing each figure and table sequentially. The computation time reported below was recorded using (R 3.6.3) running on machine equipped with Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz and 125 GB RAM.
+
+Before running the code, please complete the following steps:
+1. Download the entire repository as "OSG_Reproducibility_Materials.zip", extract it as a folder named "OSG_Reproducibility_Materials", and set your working directory to this folder. 
+2. Download the ERA5 ensembles from https://zenodo.org/records/16618043, and save them in the sub-directory "OSG_Reproducibility_Materials/Data".
+3. Download "Slepian_ARP.zip" file from https://zenodo.org/records/16655516, extract all .m files inside, and save them in the sub-repository "OSG_Reproducibility_Materials/Slepian_ARP". 
 
 #### Process the data
 Please refer to the "Wrapper.R" file to process the downloaded data. The total computational time is approximately 1.46 minutes. For more detailed code and computational time, please refer to the file "Data_Treatment.R" in the sub-repository "Data".
