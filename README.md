@@ -17,6 +17,11 @@ This sub-repository is used to store the downloaded ERA5 ensemble data and to pr
 This sub-repository provides the R script for reproducing Figure 1, which demonstrates several statistical characteristics of the u- and v-component wind speed ERA5 ensembles.
 * "Data_Demonstration.R": R script for reproducing Figure 1
 
+#### Slepian_Demonstration
+This sub-repository provides the R script for reproducing Figure 2, which demonstrates Slepian bases and eigenvalues in the Slepian concentration problem.
+* "Slepian_Demonstration.R": R script for reproducing Figure 2
+
+
 ## Data
 ### Abstract
 ERA5 is the fifth-generation ECMWF reanalysis, providing comprehensive and consistent descriptions of Earth’s climate and weather across atmospheric, land, and oceanic variables. The ERA5 ensemble consists of 10 members at a horizontal spatial resolution of 0.5 degree and a temporal resolution of 3 hours, representing ERA5 uncertainty through perturbed observations and model physics. This work uses 10m u- and v-component wind speed ERA5 ensembles over the Arabian Peninsula for the period 2014–2023, which were downloaded in 2024.
