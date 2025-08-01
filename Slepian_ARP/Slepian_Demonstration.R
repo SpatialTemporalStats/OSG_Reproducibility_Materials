@@ -6,6 +6,7 @@
 #           Then, please extract the contents of "Slepian_ARP.zip" and save all .m files in the sub-repository "Slepian_ARP".
 # ! Note 2. On the same website, we provide Matlab code in "Slepian_Code.zip" for
 #           generating these Slepian bases or adapting the approach for related applications.
+#           The code applies the method proposed by [Bates et al. (2017)](https://dl.acm.org/doi/abs/10.1109/TSP.2017.2712122) to ARP.
  
 # Necessary packages
 library(R.matlab)
