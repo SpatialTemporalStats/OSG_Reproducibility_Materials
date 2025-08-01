@@ -1,8 +1,12 @@
 ################################################################################
 # This file includes all steps to reproduce Figure 2                           #
 ################################################################################
-# Please donwload the Slepian bases and eigenvalues used in this Figure from XXX.
-# Then, please save them to sub-repository "Slepian_ARP".
+# ! Note 1. Before running the code, please download the required Slepian bases and their eigenvalues.
+#           First, please download "Slepian_ARP.zip" from https://zenodo.org/records/16655516.
+#           Then, please extract the contents of "Slepian_ARP.zip" and save all .m files in the sub-repository "Slepian_ARP".
+# ! Note 2. On the same website, we provide Matlab code in "Slepian_Code.zip" for
+#           generating these Slepian bases or adapting the approach for related applications.
+ 
 # Necessary packages
 library(R.matlab)
 library(ggplot2)
