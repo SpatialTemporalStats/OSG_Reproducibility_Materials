@@ -53,7 +53,7 @@ for(r in 1:R){
   Windv.rsd2[r,,]=Windv.ARP2[r,,]-Windv.EnMean2
 }
 # t2=proc.time()[[3]]
-# t2-t1=70.019, 21.375
+# t2-t1=70.019 
 
 
 
@@ -112,7 +112,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
   labs(fill=expression(ms^{-1}))+ylab("Latitude")+xlab("Longitude")
 print(PT)          # Save to 6.30*3.00 Slepian_Perform_A100.pdf
 # t2=proc.time()[[3]]
-# t2-t1=3.774, 4.562
+# t2-t1=3.774 
 
 
 
@@ -171,7 +171,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
   labs(fill=expression(ms^{-1}))+ylab("Latitude")+xlab("Longitude")
 print(PT)          # Save to 6.30*3.00 Slepian_Perform_A300.pdf
 # t2=proc.time()[[3]]
-# t2-t1=3.663, 5.422
+# t2-t1=3.663 
 
 
 
@@ -230,7 +230,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
   labs(fill=expression(ms^{-1}))+ylab("Latitude")+xlab("Longitude")
 print(PT)          # Save to 6.30*3.00 Slepian_Perform_A400.pdf
 # t2=proc.time()[[3]]
-# t2-t1=4.347, 5.678
+# t2-t1=4.347 
 
 
 
@@ -292,7 +292,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
   labs(fill=expression(ms^{-1}))+ylab("Latitude")+xlab("Longitude")
 print(PT)          # Save to 6.30*3.00 EOFs_Perform_A300_1.pdf
 # t2=proc.time()[[3]]
-# t2-t1=214.911, 357.515
+# t2-t1=214.911 
 
 
 
