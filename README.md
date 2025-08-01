@@ -61,6 +61,9 @@ Figure 1 demonstrates several statistical characteristics of the u- and v-compon
 #### Reproduce Figure 2 in Section 3.1
 Figure 2 illustrates Slepian bases and eigenvalues in the Slepian concentration problem. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 2.78 seconds. For more detailed code and computational time, please refer to the file "Slepian_Demonstration.R" in the sub-repository "Slepian_Demonstration". 
 
+#### Reproduce Figure 3 in Section 3.1
+Figure 3 demonstrates the performance of Slepian bases. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 4.95 minutes. For more detailed code and computational time, please refer to the file "Slepian_Performance.R" in the sub-repository "Slepian_Performance". 
+
 
 
 
