@@ -53,7 +53,7 @@ Please refer to the "Wrapper.R" file to process the downloaded data. The total c
 Figure 1 demonstrates several statistical characteristics of the u- and v-component wind speed ERA5 ensembles. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 26.49 minutes. For more detailed code and computational time, please refer to the file "Data_Demonstration.R" in the sub-repository "Data_Demonstration".
 
 #### Reproduce Figure 2 in Section 3.1
-Figure 2 demonstrates Slepian bases and eigenvalues in the Slepian concentration problem. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 2.78 seconds. For more detailed code and computational time, please refer to the file "Slepian_Demonstration.R" in the sub-repository "Slepian_Demonstration". 
+Figure 2 illustrates Slepian bases and eigenvalues in the Slepian concentration problem. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 2.78 seconds. Before running the code, please download the required Slepian bases and eigenvalues for demonstration from https://zenodo.org/records/16655516 to facilitate reproduction of Figure 2. In addition, MATLAB code that applies the method proposed by [Bates et al. (2017)](https://dl.acm.org/doi/abs/10.1109/TSP.2017.2712122) to the ARP is available on the same website. This code can be used to reproduce the bases independently or adapt the approach for related applications. For more detailed code and computational time, please refer to the file "Slepian_Demonstration.R" in the sub-repository "Slepian_Demonstration" and the website mentioned above. 
 
 
 
