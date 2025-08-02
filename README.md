@@ -18,7 +18,7 @@ This sub-repository provides the R script for reproducing Figure 1, which demons
 * "Data_Demonstration.R": R script for reproducing Figure 1
 
 #### Functions
-This sub-repository provides R scripts for some repeatedly used functions.
+This sub-repository contains R scripts for several frequently used functions.
 * "Assessment_Indices.R": functions for calculating assessment indices in Table 1
 * "InverseTH.R": function for performing the inverse Tukey h transformation
 
