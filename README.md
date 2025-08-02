@@ -17,7 +17,7 @@ This sub-repository contains R scripts for several frequently used functions.
 This sub-repository is used to store the downloaded ERA5 ensemble data and to provide detailed instructions for processing them.
 * "Data_Treatment.R": R script for processing the downloaded data
 * "IPCC-WGI-reference-regions-v4_R.rda": an R data file for identifying the Arabian Pennisula region (ARP), provided by [Iturbide et al. (2020)](https://essd.copernicus.org/articles/12/2959/2020/essd-12-2959-2020-assets.html)
-* <span style="color:gray">"WindSpeeduv_ARP_2014.nc" -- "WindSpeeduv_ARP_2023.nc": downloaded ERA5 ensemble data used in this work</span>
+* > "WindSpeeduv_ARP_2014.nc" -- "WindSpeeduv_ARP_2023.nc": downloaded ERA5 ensemble data used in this work
 
 #### Data_Demonstration
 This sub-repository provides the R script for reproducing Figure 1, which demonstrates several statistical characteristics of the u- and v-component wind speed ERA5 ensembles.
