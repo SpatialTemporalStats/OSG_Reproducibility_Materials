@@ -34,7 +34,12 @@ This sub-repository provides the R scripts for reproducing Figures 2 and 3, whic
 This sub-repository contains code for implementing the case studies (Sections 4.2 and 4.3, and Sections S4.2 and S4.3) and reproducing all associated figures and tables.
 * "**FSG**": sub-repository for the stochastic generator directly derived from the full data (FSG)
   * "FSG.R": R script for the FSG construction, emulation, and evaluation
-  >*"TGHparaufull.csv", "TGHparavfull.csv", "Phihatfull.mat", "Kfull.mat", "Iuq_u_full.csv", "Iuq_v_full.csv", "Ibc_full.csv", "Itc1_u_full.csv", "Itc1_v_full.csv", "Itc2_u_full.csv", "Itc2_v_full.csv", "Itp_full.csv", "Iwdt_u_full.csv", "Iwdt_v_full.csv", "Iwds_u_full.csv", "Iwds_v_full.csv", "Imd_full.csv", "Isdd_full.csv", "I75qd_full.csv", "I25qd_full.csv": outputs of "FSG.R" used to plot figures
+  >* "TGHparaufull.csv", "TGHparavfull.csv", "Phihatfull.mat", "Kfull.mat", "Iuq_u_full.csv", "Iuq_v_full.csv", "Ibc_full.csv", "Itc1_u_full.csv", "Itc1_v_full.csv", "Itc2_u_full.csv", "Itc2_v_full.csv", "Itp_full.csv", "Iwdt_u_full.csv", "Iwdt_v_full.csv", "Iwds_u_full.csv", "Iwds_v_full.csv", "Imd_full.csv", "Isdd_full.csv", "I75qd_full.csv", "I25qd_full.csv": outputs of "FSG.R" used to plot figures
+
+* "**Scenario1_OSG_Long**": sub-repository for the OSG-Long
+  * "Scenario1_OSG_Long.R": R script for the OSG-Long construction, emulation, and evaluation
+  * "Plot_estimates_OSG_Long.R": R script for reproducing Figures 4-5, S6, and Table S3
+  >* "RFDs_OSG_Long.csv", "TGHpara_u_all_1.mat", "TGHpara_v_all_1.mat", "Phihat_online_1.mat", "K_online_1.mat", "Iuq_u_online_1.csv", "Iuq_v_online_1.csv", "Ibc_online_1.csv", "Itc1_u_online_1.csv", "Itc1_v_online_1.csv", "Itc2_u_online_1.csv", "Itc2_v_online_1.csv", "Itp_online_1.csv", "Iwdt_u_online_1.csv", "Iwdt_v_online_1.csv", "Iwds_u_online_1.csv", "Iwds_v_online_1.csv", "Imd_online_1.csv", "Isdd_online_1.csv", "I75qd_online_1.csv", "I25qd_online_1.csv": outputs of "Scenario1_OSG_Long.R" used to plot figures
 
 
 ## Data
