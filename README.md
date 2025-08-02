@@ -27,14 +27,14 @@ This sub-repository provides the R script for reproducing Figure 1, which demons
 This sub-repository provides the R scripts for reproducing Figures 2 and 3, which demonstrates Slepian bases in the Slepian concentration problem and their performance. Additionally, this sub-repository is used to store the downloaded Slepian bases.
 * "Slepian_Demonstration.R": R script for reproducing Figure 2
 * "Slepian_Performance.R": R script for reproducing Figure 3
-* <span style="color:gray">"Basis_reg_eig_value_181_real.mat" and others: downloaded eigenvalues in the Slepian concentration problem</span>
-* <span style="color:gray">"Slepian_spatial_181.mat" and others: downloaded Slepian bases in the Slepian concentration problem</span>
+* > "Basis_reg_eig_value_181_real.mat" and others: downloaded eigenvalues in the Slepian concentration problem
+* > "Slepian_spatial_181.mat" and others: downloaded Slepian bases in the Slepian concentration problem
 
 #### Case_Studies
 This sub-repository contains code for implementing the case studies (Sections 4.2 and 4.3, and Sections S4.2 and S4.3) and reproducing all associated figures and tables.
 * "**FSG**": sub-repository for the stochastic generator directly derived from the full data (FSG)
   * "FSG.R": R script for the FSG construction, emulation, and evaluation
-  * </span>"TGHparaufull.csv", "TGHparavfull.csv", "Phihatfull.mat", "Kfull.mat", "Iuq_u_full.csv", "Iuq_v_full.csv", "Ibc_full.csv", "Itc1_u_full.csv", "Itc1_v_full.csv", "Itc2_u_full.csv", "Itc2_v_full.csv", "Itp_full.csv", "Iwdt_u_full.csv", "Iwdt_v_full.csv", "Iwds_u_full.csv", "Iwds_v_full.csv", "Imd_full.csv", "Isdd_full.csv", "I75qd_full.csv", "I25qd_full.csv": outputs of "FSG.R" used to plot figures</span> 
+  * > "TGHparaufull.csv", "TGHparavfull.csv", "Phihatfull.mat", "Kfull.mat", "Iuq_u_full.csv", "Iuq_v_full.csv", "Ibc_full.csv", "Itc1_u_full.csv", "Itc1_v_full.csv", "Itc2_u_full.csv", "Itc2_v_full.csv", "Itp_full.csv", "Iwdt_u_full.csv", "Iwdt_v_full.csv", "Iwds_u_full.csv", "Iwds_v_full.csv", "Imd_full.csv", "Isdd_full.csv", "I75qd_full.csv", "I25qd_full.csv": outputs of "FSG.R" used to plot figures
 
 
 ## Data
