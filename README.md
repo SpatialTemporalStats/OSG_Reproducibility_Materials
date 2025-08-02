@@ -83,8 +83,8 @@ Figure 2 illustrates Slepian bases and eigenvalues in the Slepian concentration 
 #### Reproduce Figure 3 in Section 3.1
 Figure 3 demonstrates the performance of Slepian bases. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 4.95 minutes. For more detailed code and computational time, please refer to the file "Slepian_Performance.R" in the sub-repository "Slepian_ARP". 
 
-
-
+#### Reproduce Figures 4-5 in Section 4.1 (Figure S6 and Table S3 in Section S4.1)
+Figures 4-5, S6, and Table S3 demonstrate the estimates and updates of parameters in OSG-Long. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 10.75 hours, with most of the time spent on evaluating FSG and OSG‑Long. Constructing both SGs and generating emulations require only about 1.36 hours. For more detailed code and computational time, please refer to the files "FSG/FSG.R", "Scenario1_OSG_Long/Scenario1_OSG_Long.R", and "Scenario1_OSG_Long/Plot_estimates_OSG_Long.R".
 
 
 
