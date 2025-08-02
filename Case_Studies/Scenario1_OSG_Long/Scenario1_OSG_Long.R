@@ -54,7 +54,7 @@ for(r in 1:R){
   Windv.rsd[r,,]=Windv.ARP[r,,1:T0]-Windv.EnMean
 }
 # t2=proc.time()[[3]]
-# t2-t1=143.601, 47.859
+# t2-t1=143.601
 
 # Step I(2). Translate the data to the Slepian domain and obtain \sigma_t(L_i,l_j)
 # t1=proc.time()[[3]]
@@ -72,7 +72,7 @@ for(r in 1:R){
 v2hat.u=v2hat.u/R
 v2hat.v=v2hat.v/R
 # t2=proc.time()[[3]]
-# t2-t1=5.231, 9.163
+# t2-t1=5.231
 
 # Step I(3). Tukey h transformation 
 # t1=proc.time()[[3]] 
@@ -98,7 +98,7 @@ for(i in 1:Q.sl){
 TGHpara.u.all[1,,]=TGHpara.u.online
 TGHpara.v.all[1,,]=TGHpara.v.online
 # t2=proc.time()[[3]]
-# t2-t1=4.241, 2.904
+# t2-t1=4.241
 
 # Step I(4). VAR(2) model
 # t1=proc.time()[[3]]
@@ -123,7 +123,7 @@ K.all=array(0,c(B+1,2*Q.sl,2*Q.sl))
 Phi.hat.all[1,,]=Phi.hat.online
 K.all[1,,]=K.online
 # t2=proc.time()[[3]]
-# t2-t1=3.82, 3.99
+# t2-t1=3.82
 
 
 ### Step II. Process subsequent data blocks (Here we have to store all cumulative estimates )
@@ -138,7 +138,7 @@ for(b in 1:B){
     Windv.rsd[r,,]=Windv.ARP[r,,(T0+(b-1)*Tt+1):(T0+b*Tt)]-Windv.EnMean[,(T0+(b-1)*Tt+1):(T0+b*Tt)]
   }
   # t2=proc.time()[[3]]
-  # t2-t1=141.963, 45.54
+  # t2-t1=141.963
   
   # Step II(2). Translate the data to the Slepian domain and obtain \sigma_t(L_i,l_j) 
   # t1=proc.time()[[3]]
@@ -156,7 +156,7 @@ for(b in 1:B){
   v2hat.u=cbind(v2hat.u,v2hat.u.online/R)
   v2hat.v=cbind(v2hat.v,v2hat.v.online/R)
   # t2=proc.time()[[3]]
-  # t2-t1=5.255, 8.609
+  # t2-t1=5.255
   
   # Step II(3). Tukey h transformation with Lambert function
   # t1=proc.time()[[3]]
@@ -193,7 +193,7 @@ for(b in 1:B){
   TGHpara.u.all[b+1,,]=TGHpara.u.online
   TGHpara.v.all[b+1,,]=TGHpara.v.online
   # t2=proc.time()[[3]]
-  # t2-t1=4.982, 2.818
+  # t2-t1=4.982
   
   # Step II(4). VAR(2) model
   # t1=proc.time()[[3]]
@@ -222,7 +222,7 @@ for(b in 1:B){
   Phi.hat.all[b+1,,]=Phi.hat.online
   K.all[b+1,,]=K.online
   # t2=proc.time()[[3]]
-  # t2-t1=6.693, 6.36
+  # t2-t1=6.693
 }
 writeMat(here("Case_Studies/Scenario1_OSG_Long","TGHpara_u_all_1.mat"),TGHparauall=TGHpara.u.all)
 writeMat(here("Case_Studies/Scenario1_OSG_Long","TGHpara_v_all_1.mat"),TGHparavall=TGHpara.v.all)
