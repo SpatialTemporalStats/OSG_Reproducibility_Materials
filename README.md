@@ -48,7 +48,7 @@ This sub-repository contains code for implementing the case studies (Sections 4 
 
 * "**Tuning_Parameters**": sub-repository for tuning parameters
   * "ChooseA.R": R script for choosing the number of Slepian bases $A$
-  * "ChooseP.R": R script for choosing the order $P$ of the vecror autoregressive model 
+  * "ChooseP.R": R script for choosing the order $P$ of the vecror autoregressive model (VAR)
 
 * "Plot_emulation_performance.R": R script for reproducing Figures 6, 9, S7, S10, and S11
 * "Storage.R": R script for reproducing Table 2 and Figure S5
@@ -107,6 +107,6 @@ Figures 6, 9, S7, S10, and S11 demonstrate the emulation performance of FSG, OSG
 #### Reproduce Table 2 in Section 4.3 (and Figure S5 in Section S4.1)
 Table 2 demonstrates the storage demands of FSG, OSG-Long, and OSG-Short construction. Figure S5 compares storage of training data and SG parameters. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.309 seconds. For more detailed code, please refer to the file "Storage.R" in the sub-repository "Case_Studies".          
 
-
-
+#### Reproduce Figure S4 in Section S4.1
+Figure S4 helps to select the order $P$ of the VAR model. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.26 hours. For more detailed code and computational time, please refer to the file "ChooseP.R" in the sub-repository "Case_Studies/Tuning_Parameters".          
 
