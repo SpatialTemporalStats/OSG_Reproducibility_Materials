@@ -17,7 +17,7 @@ This sub-repository contains R scripts for several frequently used functions.
 This sub-repository is used to store the downloaded ERA5 ensemble data and to provide detailed instructions for processing them.
 * "Data_Treatment.R": R script for processing the downloaded data
 * "IPCC-WGI-reference-regions-v4_R.rda": an R data file for identifying the Arabian Pennisula region (ARP), provided by [Iturbide et al. (2020)](https://essd.copernicus.org/articles/12/2959/2020/essd-12-2959-2020-assets.html)
->*"WindSpeeduv_ARP_2014.nc" -- "WindSpeeduv_ARP_2023.nc": downloaded ERA5 ensemble data used in this work
+>* "WindSpeeduv_ARP_2014.nc" -- "WindSpeeduv_ARP_2023.nc": downloaded ERA5 ensemble data used in this work
 
 #### Data_Demonstration
 This sub-repository provides the R script for reproducing Figure 1, which demonstrates several statistical characteristics of the u- and v-component wind speed ERA5 ensembles.
@@ -27,8 +27,8 @@ This sub-repository provides the R script for reproducing Figure 1, which demons
 This sub-repository provides the R scripts for reproducing Figures 2 and 3, which demonstrates Slepian bases in the Slepian concentration problem and their performance. Additionally, this sub-repository is used to store the downloaded Slepian bases.
 * "Slepian_Demonstration.R": R script for reproducing Figure 2
 * "Slepian_Performance.R": R script for reproducing Figure 3
->*"Basis_reg_eig_value_181_real.mat" and others: downloaded eigenvalues in the Slepian concentration problem
->*"Slepian_spatial_181.mat" and others: downloaded Slepian bases in the Slepian concentration problem
+>* "Basis_reg_eig_value_181_real.mat" and others: downloaded eigenvalues in the Slepian concentration problem
+>* "Slepian_spatial_181.mat" and others: downloaded Slepian bases in the Slepian concentration problem
 
 #### Case_Studies
 This sub-repository contains code for implementing the case studies (Sections 4.2 and 4.3, and Sections S4.2 and S4.3) and reproducing all associated figures and tables.
