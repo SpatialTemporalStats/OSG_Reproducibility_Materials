@@ -1,8 +1,11 @@
 ################################################################################################
 # OSG-Long in Scenario 1: Construction, Emulation, and Evaluation                              #
 ################################################################################################
-# ! Note that in this file, we have to store the updates of cumulative estimates to plot e.g, Figure 8(c) and Table~S3. 
-# ! OSG_Algorithm3.R strictly follows Algorithm 3 and shows the real idea of online updating
+# ! Note. In this file, we have to store cumulative estimates^[b] at all b (data block index), 
+#         b=1,...,B, to plot e.g, Figure 8(c) and Table~S3. The Algorithm 3 (our OSG algorithm) 
+#         itself just need to store cumulative estimates^[b] at the latest b. To obtain the 
+#         real algorithm, please remove lines 82, 101-102, 124-127, 196-197, 225-226, 230-233
+
 
 # Packages, functions, and data
 # library(R.matlab)
