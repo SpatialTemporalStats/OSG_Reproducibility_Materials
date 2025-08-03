@@ -27,24 +27,24 @@ This sub-repository provides the R script for reproducing Figure 1, which demons
 This sub-repository provides the R scripts for reproducing Figures 2 and 3, which demonstrates Slepian bases in the Slepian concentration problem and their performance. Additionally, this sub-repository is used to store the downloaded Slepian bases.
 * "Slepian_Demonstration.R": R script for reproducing Figure 2
 * "Slepian_Performance.R": R script for reproducing Figure 3
->* "Basis_reg_eig_value_181_real.mat" and others: downloaded eigenvalues in the Slepian concentration problem
->* "Slepian_spatial_181.mat" and others: downloaded Slepian bases in the Slepian concentration problem
+<!-- >* "Basis_reg_eig_value_181_real.mat" and others: downloaded eigenvalues in the Slepian concentration problem -->
+<!-- >* "Slepian_spatial_181.mat" and others: downloaded Slepian bases in the Slepian concentration problem -->
 
 #### Case_Studies
 This sub-repository contains code for implementing the case studies (Sections 4.2 and 4.3, and Sections S4.2 and S4.3) and reproducing all associated figures and tables.
 * "**FSG**": sub-repository for the stochastic generator directly derived from the full data (FSG)
   * "FSG.R": R script for the FSG construction, emulation, and evaluation
-  >* "TGHparaufull.csv", "TGHparavfull.csv", "Phihatfull.mat", "Kfull.mat", "Iuq_u_full.csv", "Iuq_v_full.csv", "Ibc_full.csv", "Itc1_u_full.csv", "Itc1_v_full.csv", "Itc2_u_full.csv", "Itc2_v_full.csv", "Itp_full.csv", "Iwdt_u_full.csv", "Iwdt_v_full.csv", "Iwds_u_full.csv", "Iwds_v_full.csv", "Imd_full.csv", "Isdd_full.csv", "I75qd_full.csv", "I25qd_full.csv": outputs of "FSG.R" used to plot figures
+  <!-- >* "TGHparaufull.csv", "TGHparavfull.csv", "Phihatfull.mat", "Kfull.mat", "Iuq_u_full.csv", "Iuq_v_full.csv", "Ibc_full.csv", "Itc1_u_full.csv", "Itc1_v_full.csv", "Itc2_u_full.csv", "Itc2_v_full.csv", "Itp_full.csv", "Iwdt_u_full.csv", "Iwdt_v_full.csv", "Iwds_u_full.csv", "Iwds_v_full.csv", "Imd_full.csv", "Isdd_full.csv", "I75qd_full.csv", "I25qd_full.csv": outputs of "FSG.R" used to plot figures -->
 
 * "**Scenario1_OSG_Long**": sub-repository for the OSG-Long
   * "Scenario1_OSG_Long.R": R script for the OSG-Long construction, emulation, and evaluation
   * "Plot_estimates_OSG_Long.R": R script for reproducing Figures 4-5, S6, and Table S3
-  >* "RFDs_OSG_Long.csv", "TGHpara_u_all_1.mat", "TGHpara_v_all_1.mat", "Phihat_online_1.mat", "K_online_1.mat", "Iuq_u_online_1.csv", "Iuq_v_online_1.csv", "Ibc_online_1.csv", "Itc1_u_online_1.csv", "Itc1_v_online_1.csv", "Itc2_u_online_1.csv", "Itc2_v_online_1.csv", "Itp_online_1.csv", "Iwdt_u_online_1.csv", "Iwdt_v_online_1.csv", "Iwds_u_online_1.csv", "Iwds_v_online_1.csv", "Imd_online_1.csv", "Isdd_online_1.csv", "I75qd_online_1.csv", "I25qd_online_1.csv": outputs of "Scenario1_OSG_Long.R" used to plot figures
+  <!-- >* "RFDs_OSG_Long.csv", "TGHpara_u_all_1.mat", "TGHpara_v_all_1.mat", "Phihat_online_1.mat", "K_online_1.mat", "Iuq_u_online_1.csv", "Iuq_v_online_1.csv", "Ibc_online_1.csv", "Itc1_u_online_1.csv", "Itc1_v_online_1.csv", "Itc2_u_online_1.csv", "Itc2_v_online_1.csv", "Itp_online_1.csv", "Iwdt_u_online_1.csv", "Iwdt_v_online_1.csv", "Iwds_u_online_1.csv", "Iwds_v_online_1.csv", "Imd_online_1.csv", "Isdd_online_1.csv", "I75qd_online_1.csv", "I25qd_online_1.csv": outputs of "Scenario1_OSG_Long.R" used to plot figures -->
 
 * "**Scenario2_OSG_Short**": sub-repository for the OSG-short
   * "Scenario2_OSG_Short.R": R script for the OSG-Short construction, emulation, and evaluation
   * "Plot_estimates_OSG_Short.R": R script for reproducing Figures 7-8 and S8-9
-  >* "RFDs_OSG_Short.csv", "TGHpara_u_all_2.mat", "TGHpara_v_all_2.mat", "Phihat_online_2.mat", "K_online_2.mat", "Iuq_u_online_2.csv", "Iuq_v_online_2.csv", "Ibc_online_2.csv", "Itc1_u_online_2.csv", "Itc1_v_online_2.csv", "Itc2_u_online_2.csv", "Itc2_v_online_2.csv", "Itp_online_2.csv", "Iwdt_u_online_2.csv", "Iwdt_v_online_2.csv", "Iwds_u_online_2.csv", "Iwds_v_online_2.csv", "Imd_online_2.csv", "Isdd_online_2.csv", "I75qd_online_2.csv", "I25qd_online_2.csv": outputs of "Scenario2_OSG_Short.R" used to plot figures
+  <!-- >* "RFDs_OSG_Short.csv", "TGHpara_u_all_2.mat", "TGHpara_v_all_2.mat", "Phihat_online_2.mat", "K_online_2.mat", "Iuq_u_online_2.csv", "Iuq_v_online_2.csv", "Ibc_online_2.csv", "Itc1_u_online_2.csv", "Itc1_v_online_2.csv", "Itc2_u_online_2.csv", "Itc2_v_online_2.csv", "Itp_online_2.csv", "Iwdt_u_online_2.csv", "Iwdt_v_online_2.csv", "Iwds_u_online_2.csv", "Iwds_v_online_2.csv", "Imd_online_2.csv", "Isdd_online_2.csv", "I75qd_online_2.csv", "I25qd_online_2.csv": outputs of "Scenario2_OSG_Short.R" used to plot figures -->
 
 * "Plot_emulation_performance.R": R script for reproducing Figures 6, 9, S7, S10, and S11
 * "Storage.R": R script for reproducing Table 2 and Figure S5.
