@@ -41,7 +41,7 @@ This sub-repository contains code for implementing the case studies (Sections 4 
   * "Plot_estimates_OSG_Long.R": R script for reproducing Figures 4-5, S6, and Table S3
   <!-- >* "RFDs_OSG_Long.csv", "TGHpara_u_all_1.mat", "TGHpara_v_all_1.mat", "Phihat_online_1.mat", "K_online_1.mat", "Iuq_u_online_1.csv", "Iuq_v_online_1.csv", "Ibc_online_1.csv", "Itc1_u_online_1.csv", "Itc1_v_online_1.csv", "Itc2_u_online_1.csv", "Itc2_v_online_1.csv", "Itp_online_1.csv", "Iwdt_u_online_1.csv", "Iwdt_v_online_1.csv", "Iwds_u_online_1.csv", "Iwds_v_online_1.csv", "Imd_online_1.csv", "Isdd_online_1.csv", "I75qd_online_1.csv", "I25qd_online_1.csv": outputs of "Scenario1_OSG_Long.R" used to plot figures -->
 
-* "**Scenario2_OSG_Short**": sub-repository for the OSG-short
+* "**Scenario2_OSG_Short**": sub-repository for the OSG-Short
   * "Scenario2_OSG_Short.R": R script for the OSG-Short construction, emulation, and evaluation
   * "Plot_estimates_OSG_Short.R": R script for reproducing Figures 7-8 and S8-9
   <!-- >* "RFDs_OSG_Short.csv", "TGHpara_u_all_2.mat", "TGHpara_v_all_2.mat", "Phihat_online_2.mat", "K_online_2.mat", "Iuq_u_online_2.csv", "Iuq_v_online_2.csv", "Ibc_online_2.csv", "Itc1_u_online_2.csv", "Itc1_v_online_2.csv", "Itc2_u_online_2.csv", "Itc2_v_online_2.csv", "Itp_online_2.csv", "Iwdt_u_online_2.csv", "Iwdt_v_online_2.csv", "Iwds_u_online_2.csv", "Iwds_v_online_2.csv", "Imd_online_2.csv", "Isdd_online_2.csv", "I75qd_online_2.csv", "I25qd_online_2.csv": outputs of "Scenario2_OSG_Short.R" used to plot figures -->
