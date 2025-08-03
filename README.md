@@ -31,7 +31,7 @@ This sub-repository provides the R scripts for reproducing Figures 2 and 3, whic
 <!-- >* "Slepian_spatial_181.mat" and others: downloaded Slepian bases in the Slepian concentration problem -->
 
 #### Case_Studies
-This sub-repository contains code for implementing the case studies (Sections 4.2 and 4.3, and Sections S4.2 and S4.3) and reproducing all associated figures and tables.
+This sub-repository contains code for implementing the case studies (Sections 4 and S4) and reproducing all associated figures and tables.
 * "**FSG**": sub-repository for the stochastic generator directly derived from the full data (FSG)
   * "FSG.R": R script for the FSG construction, emulation, and evaluation
   <!-- >* "TGHparaufull.csv", "TGHparavfull.csv", "Phihatfull.mat", "Kfull.mat", "Iuq_u_full.csv", "Iuq_v_full.csv", "Ibc_full.csv", "Itc1_u_full.csv", "Itc1_v_full.csv", "Itc2_u_full.csv", "Itc2_v_full.csv", "Itp_full.csv", "Iwdt_u_full.csv", "Iwdt_v_full.csv", "Iwds_u_full.csv", "Iwds_v_full.csv", "Imd_full.csv", "Isdd_full.csv", "I75qd_full.csv", "I25qd_full.csv": outputs of "FSG.R" used to plot figures -->
@@ -47,7 +47,7 @@ This sub-repository contains code for implementing the case studies (Sections 
   <!-- >* "RFDs_OSG_Short.csv", "TGHpara_u_all_2.mat", "TGHpara_v_all_2.mat", "Phihat_online_2.mat", "K_online_2.mat", "Iuq_u_online_2.csv", "Iuq_v_online_2.csv", "Ibc_online_2.csv", "Itc1_u_online_2.csv", "Itc1_v_online_2.csv", "Itc2_u_online_2.csv", "Itc2_v_online_2.csv", "Itp_online_2.csv", "Iwdt_u_online_2.csv", "Iwdt_v_online_2.csv", "Iwds_u_online_2.csv", "Iwds_v_online_2.csv", "Imd_online_2.csv", "Isdd_online_2.csv", "I75qd_online_2.csv", "I25qd_online_2.csv": outputs of "Scenario2_OSG_Short.R" used to plot figures -->
 
 * "Plot_emulation_performance.R": R script for reproducing Figures 6, 9, S7, S10, and S11
-* "Storage.R": R script for reproducing Table 2 and Figure S5.
+* "Storage.R": R script for reproducing Table 2 and Figure S5
 
 
 ## Data
