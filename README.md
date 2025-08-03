@@ -46,6 +46,10 @@ This sub-repository contains code for implementing the case studies (Sections 4 
   * "Plot_estimates_OSG_Short.R": R script for reproducing Figures 7-8 and S8-9
   <!-- >* "RFDs_OSG_Short.csv", "TGHpara_u_all_2.mat", "TGHpara_v_all_2.mat", "Phihat_online_2.mat", "K_online_2.mat", "Iuq_u_online_2.csv", "Iuq_v_online_2.csv", "Ibc_online_2.csv", "Itc1_u_online_2.csv", "Itc1_v_online_2.csv", "Itc2_u_online_2.csv", "Itc2_v_online_2.csv", "Itp_online_2.csv", "Iwdt_u_online_2.csv", "Iwdt_v_online_2.csv", "Iwds_u_online_2.csv", "Iwds_v_online_2.csv", "Imd_online_2.csv", "Isdd_online_2.csv", "I75qd_online_2.csv", "I25qd_online_2.csv": outputs of "Scenario2_OSG_Short.R" used to plot figures -->
 
+* "**Tuning_Parameters**": sub-repository for tuning parameters
+  * "ChooseA.R": R script for choosing the number of Slepian bases $A$
+  * "ChooseP.R": R script for choosing the order $P$ of the vecror autoregressive model 
+
 * "Plot_emulation_performance.R": R script for reproducing Figures 6, 9, S7, S10, and S11
 * "Storage.R": R script for reproducing Table 2 and Figure S5
 
