@@ -102,11 +102,14 @@ Figures 4-5, S6, and Table S3 demonstrate the estimates and updates of parameter
 Figures 7-8 and S8-9 demonstrate the estimates and updates of parameters in OSG-Short. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 5.51 hours, with most of the time spent on evaluating OSG‑Short. Constructing OSG-Short and generating emulations require only about 48.95 minutes. For more detailed code and computational time, please refer to the files "Case_Studies/Scenario2_OSG_Short/Scenario2_OSG_Short.R", and "Case_Studies/Scenario2_OSG_Short/Plot_estimates_OSG_Short.R".
 
 #### Reproduce Figure 6 in Section 4.2 and Figure 9 in Section 4.3 (and Figure S7 in Section S4.2 and Figures S10-11 in Section S4.3)
-Figures 6, 9, S7, S10, and S11 demonstrate the emulation performance of FSG, OSG-Long, and OSG-Short. Please refer to the "Wrapper.R" file for its reproducibility command. With outputs in subrepositories "Case_Studies/FSG", "Case_Studies/Scenario1_OSG_Long", and "Case_Studies/Scenario2_OSG_Short", the total computational time is approximately 30.07 seconds. For more detailed code, please refer to the files "Case_Studies/Plot_emulation_performance.R".
+Figures 6, 9, S7, S10, and S11 demonstrate the emulation performance of FSG, OSG-Long, and OSG-Short. Please refer to the "Wrapper.R" file for its reproducibility command. With outputs in sub-repositories "Case_Studies/FSG", "Case_Studies/Scenario1_OSG_Long", and "Case_Studies/Scenario2_OSG_Short", the total computational time is approximately 30.07 seconds. For more detailed code, please refer to the files "Case_Studies/Plot_emulation_performance.R".
 
 #### Reproduce Table 2 in Section 4.3 (and Figure S5 in Section S4.1)
-Table 2 demonstrates the storage demands of FSG, OSG-Long, and OSG-Short construction. Figure S5 compares storage of training data and SG parameters. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.309 seconds. For more detailed code, please refer to the file "Storage.R" in the sub-repository "Case_Studies".          
+Table 2 demonstrates the storage demands of FSG, OSG-Long, and OSG-Short construction. Figure S5 compares storage of training data and SG parameters. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.31 seconds. For more detailed code, please refer to the file "Storage.R" in the sub-repository "Case_Studies". 
 
-#### Reproduce Figure S4 in Section S4.1
+#### Reproduce (Figures S2-3 in Section S4.1)
+Figures S2-3 help to select the number of Slepian bases $A$. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.67 hours. For more detailed code and computational time, please refer to the file "ChooseA.R" in the sub-repository "Case_Studies/Tuning_Parameters".  
+
+#### Reproduce (Figure S4 in Section S4.1)
 Figure S4 helps to select the order $P$ of the VAR model. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.26 hours. For more detailed code and computational time, please refer to the file "ChooseP.R" in the sub-repository "Case_Studies/Tuning_Parameters".          
 
