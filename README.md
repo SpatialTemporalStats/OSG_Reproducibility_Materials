@@ -31,7 +31,7 @@ This sub-repository contains code for implementing the case studies (Sections 4 
 #### Data
 This sub-repository is used to store the downloaded ERA5 ensemble data and to provide detailed instructions for processing them.
 * "Data_Treatment.R": R script for processing the downloaded data
-* "IPCC-WGI-reference-regions-v4_R.rda": an R data file for identifying the Arabian Pennisula region (ARP), provided by [Iturbide et al. (2020)](https://essd.copernicus.org/articles/12/2959/2020/essd-12-2959-2020-assets.html)
+* "IPCC-WGI-reference-regions-v4_R.rda": R data file for identifying the Arabian Pennisula region (ARP), provided by [Iturbide et al. (2020)](https://essd.copernicus.org/articles/12/2959/2020/essd-12-2959-2020-assets.html)
 <!-- >* "WindSpeeduv_ARP_2014.nc" -- "WindSpeeduv_ARP_2023.nc": downloaded ERA5 ensemble data used in this work -->
 
 #### Data_Demonstration
