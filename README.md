@@ -111,5 +111,11 @@ Table 2 demonstrates the storage demands of FSG, OSG-Long, and OSG-Short constru
 Figures S2-3 help to select the number of Slepian bases $A$. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.67 hours. For more detailed code and computational time, please refer to the file "ChooseA.R" in the sub-repository "Case_Studies/Tuning_Parameters".  
 
 #### Reproduce (Figure S4 in Section S4.1)
-Figure S4 helps to select the order $P$ of the VAR model. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.26 hours. For more detailed code and computational time, please refer to the file "ChooseP.R" in the sub-repository "Case_Studies/Tuning_Parameters".          
+Figure S4 helps to select the order $P$ of the VAR model. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.26 hours. For more detailed code and computational time, please refer to the file "ChooseP.R" in the sub-repository "Case_Studies/Tuning_Parameters".    
 
+## Supporting Software Requirement
+#### Version of primary software used
+R version 3.6.3 (2020-02-29)
+
+#### Libraries and dependencies used by the code
+here(1.0.1), ncdf4(1.19), sp(1.4-6), ggplot2(3.5.1), maps(3.4.0), moments(0.14.1), R.matlab(3.6.2), LambertW(0.6.9-1), fdaoutlier(0.2.0), matrixStats(1.5.0), approxOT(1.0.2), patchwork(1.2.0), scales(1.3.0), dplyr(1.1.4)
