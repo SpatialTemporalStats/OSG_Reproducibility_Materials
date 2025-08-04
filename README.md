@@ -28,14 +28,6 @@ This sub-repository contains code for implementing the case studies (Sections 4 
 * "Plot_emulation_performance.R": R script for reproducing Figures 6, 9, S7, S10, and S11
 * "Storage.R": R script for reproducing Table 2 and Figure S5
 
-#### "Wrapper.R"
-This file outlines the reproducibility workflow of the article.  
-
-#### Functions
-This sub-repository contains R scripts for several frequently used functions.
-* "Assessment_Indices.R": functions for calculating assessment indices in Table 1
-* "InverseTH.R": function for performing the inverse Tukey h transformation
-
 #### Data
 This sub-repository is used to store the downloaded ERA5 ensemble data and to provide detailed instructions for processing them.
 * "Data_Treatment.R": R script for processing the downloaded data
@@ -45,6 +37,14 @@ This sub-repository is used to store the downloaded ERA5 ensemble data and to pr
 #### Data_Demonstration
 This sub-repository provides the R script for reproducing Figure 1, which demonstrates several statistical characteristics of the u- and v-component wind speed ERA5 ensembles.
 * "Data_Demonstration.R": R script for reproducing Figure 1
+
+#### "Wrapper.R"
+This file outlines the reproducibility workflow of the article.  
+
+#### Functions
+This sub-repository contains R scripts for several frequently used functions.
+* "Assessment_Indices.R": functions for calculating assessment indices in Table 1
+* "InverseTH.R": function for performing the inverse Tukey h transformation
 
 #### Slepian_ARP
 This sub-repository provides the R scripts for reproducing Figures 2 and 3, which demonstrates Slepian bases in the Slepian concentration problem and their performance. Additionally, this sub-repository is used to store the downloaded Slepian bases.
