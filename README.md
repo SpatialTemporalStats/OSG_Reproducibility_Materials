@@ -82,7 +82,7 @@ Before running the code, please complete the following steps:
 1. Download the entire repository as "OSG_Reproducibility_Materials.zip", extract it as a folder named "OSG_Reproducibility_Materials", and set your working directory to this folder. 
 2. Download the ERA5 ensembles from https://zenodo.org/records/16618043, and save them in the sub-directory "OSG_Reproducibility_Materials/Data".
 3. Download "Slepian_ARP.zip" file from https://zenodo.org/records/16655516, extract all .m files inside, and save them in the sub-repository "OSG_Reproducibility_Materials/Slepian_ARP".
-4. **Note:** If you encounter segmentation faults, please try to limit BLAS to a single thread by setting environment variables such as `OPENBLAS_NUM_THREADS=1`, `MKL_NUM_THREADS=1`, and `OMP_NUM_THREADS=1` before launching R.
+4. *Note: If segmentation faults occur, you may try limiting BLAS to a single thread by setting `OPENBLAS_NUM_THREADS=1`, `MKL_NUM_THREADS=1`, and `OMP_NUM_THREADS=1` before launching R.*
 
 #### Process the data
 Please refer to the "Wrapper.R" file to process the downloaded data. The total computational time is approximately 1.46 minutes. For more detailed code and computational time, please refer to the file "Data_Treatment.R" in the sub-repository "Data".
