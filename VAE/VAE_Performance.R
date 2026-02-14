@@ -1,7 +1,10 @@
 ################################################################################
 # This file includes all steps to reproduce Figure S12                         #
 ################################################################################
-# Necessary packages
+#! Note. Before running the code, please run the file "Wind_VAE_Perform_Update.py" using "vae_support.sbatch".
+#        Then, you will get file "test_recon_loss_1m.npy". Similarly, you can get "test_recon_loss_1y.npy" and "test_recon_loss_9y.npy".
+
+
 # library(reticulate)
 np=import("numpy")
 # library(ggplot2)
