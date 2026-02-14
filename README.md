@@ -52,7 +52,10 @@ This sub-repository provides the R scripts for reproducing Figures 2 and 3, whic
 
 #### VAE
 This sub-repository provides the R and python scripts for reproducing Figure S12, which demonstrates the performance of variational autoencoder (VAE) trained by initial data blocks of various lengths. 
-* aaa
+* "VAE_Performance.R": R script for reproducing Figure S12
+* "Wind_VAE_Perform_Update.py": python script for geting the performance of VAE
+* "Wind_VAE_Tuning_Parameters.py": python script for selecting tuning parameters in VAE
+<!-- >* "test_recon_loss_1m.npy", "test_recon_loss_1y.npy", "test_recon_loss_9y.npy": outputs of "Wind_VAE_Perform_Update.py" used to plot Figure S12
 
 #### "Wrapper.R"
 This file outlines the reproducibility workflow of the article.  
@@ -118,6 +121,9 @@ Figures S2-3 help to select the number of Slepian bases $A$. Please refer to the
 
 #### Reproduce (Figure S4 in Section S4.1)
 Figure S4 helps to select the order $P$ of the VAR model. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.26 hours. For more detailed code and computational time, please refer to the file "ChooseP.R" in the sub-repository "Case_Studies/Tuning_Parameters".    
+
+#### Reproduce (Figure S12 in Section S5)
+Figure S12 demonstrates the performance of VAE trained by initial data blocks covering the first month, the first year, and the first nine years, respectively. Please refer to the "Wrapper.R" file for its reproducibility command. For more detailed code, please refer to the file "VAE_Performance.R" in the sub-repository "VAE". 
 
 ## Supporting Software Requirement
 #### Version of primary software used
