@@ -55,7 +55,7 @@ This sub-repository provides the R and python scripts for reproducing Figure S12
 * "VAE_Performance.R": R script for reproducing Figure S12
 * "Wind_VAE_Perform_Update.py": python script for geting the performance of VAE
 * "Wind_VAE_Tuning_Parameters.py": python script for selecting tuning parameters in VAE
-<!-- >* "test_recon_loss_1m.npy", "test_recon_loss_1y.npy", "test_recon_loss_9y.npy": outputs of "Wind_VAE_Perform_Update.py" used to plot Figure S12 -->
+* "test_recon_loss_1m.npy", "test_recon_loss_1y.npy", "test_recon_loss_9y.npy": outputs of "Wind_VAE_Perform_Update.py" used to plot Figure S12 
 
 #### "Wrapper.R"
 This file outlines the reproducibility workflow of the article.  
