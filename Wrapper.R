@@ -166,4 +166,9 @@ source(here("Case_Studies/Tuning_Parameters","ChooseP.R"))
 
 
 
-
+######   (Figure S12 in Section S5)   ##################################################################
+# Figure S12 demonstrates the performance of VAE trained by initial data block from the first month,   #
+# the first year, and the first nine years, respectively.                                              #
+# Detailed code can be found in "VAE/VAE_Performance.R".                                               #
+########################################################################################################
+source(here("VAE","VAE_Performance.R"))
