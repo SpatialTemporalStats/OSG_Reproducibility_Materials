@@ -1,9 +1,8 @@
 ################################################################################
 # This file includes all steps to reproduce Figure S12                         #
 ################################################################################
-#! Note. Before running the code, please run the file "Wind_VAE_Perform_Update.py".
-#        Then, you will get file "test_recon_loss_1m.npy". Similarly, you can get "test_recon_loss_1y.npy" and "test_recon_loss_9y.npy".
-
+#! Note. You could directly use outputs "test_recon_loss_1m.npy", "test_recon_loss_1y.npy", and "test_recon_loss_9y.npy". 
+#        Or you could run the python file "Wind_VAE_Perform_Update.py" to get the above outputs. 
 
 # library(reticulate)
 np=import("numpy")
