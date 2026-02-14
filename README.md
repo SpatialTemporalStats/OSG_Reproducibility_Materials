@@ -50,6 +50,10 @@ This sub-repository provides the R scripts for reproducing Figures 2 and 3, whic
 <!-- >* "Basis_reg_eig_value_181_real.mat" and others: downloaded eigenvalues in the Slepian concentration problem -->
 <!-- >* "Slepian_spatial_181.mat" and others: downloaded Slepian bases in the Slepian concentration problem -->
 
+#### VAE
+This sub-repository provides the R and python scripts for reproducing Figure S12, which demonstrates the performance of variational autoencoder (VAE) trained by initial data blocks of various lengths. 
+* aaa
+
 #### "Wrapper.R"
 This file outlines the reproducibility workflow of the article.  
 
