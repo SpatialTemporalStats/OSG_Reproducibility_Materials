@@ -143,11 +143,11 @@ id.ARP=which(!is.na(is.inside))           # length(id.ARP): 1215
 
 
 ###### Part 3. Obtain data over the ARP and their grid points
-t1=proc.time()[[3]]
+# t1=proc.time()[[3]]
 Windu.ARP=Windu.ARP[,id.ARP,]
 Windv.ARP=Windv.ARP[,id.ARP,]
 Dat.loc.arp=Dat.loc[id.ARP,]
-t2=proc.time()[[3]]
+# t2=proc.time()[[3]]
 # t2-t1=8.737
 
 
