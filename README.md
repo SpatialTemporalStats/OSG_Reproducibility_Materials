@@ -11,6 +11,10 @@ This sub-repository contains code for implementing the case studies (Sections 4 
   * "FSG.R": R script for FSG's construction, emulation, and evaluation
   <!-- >* "TGHparaufull.csv", "TGHparavfull.csv", "Phihatfull.mat", "Kfull.mat", "Iuq_u_full.csv", "Iuq_v_full.csv", "Ibc_full.csv", "Itc1_u_full.csv", "Itc1_v_full.csv", "Itc2_u_full.csv", "Itc2_v_full.csv", "Itp_full.csv", "Iwdt_u_full.csv", "Iwdt_v_full.csv", "Iwds_u_full.csv", "Iwds_v_full.csv", "Imd_full.csv", "Isdd_full.csv", "I75qd_full.csv", "I25qd_full.csv": outputs of "FSG.R" used to plot figures -->
 
+* "**MC**": sub-repository for Monte Carlo assessment of emulation variability
+  * "MC_FSG.R", "MC_OSG_Long.R", and "MC_OSG_Short.R": R scripts for experiments on FSG, OSG-Long, and OSG-Short, respectively. 
+  * "MC_Plot.R": R script for reproducing Figure S14
+
 * "**Scenario1_OSG_Long**": sub-repository for the OSG-Long
   * "Scenario1_OSG_Long.R": R script for OSG-Long's construction, emulation, and evaluation
   * "Plot_estimates_OSG_Long.R": R script for reproducing Figures 4-5, S6, and Table S3
