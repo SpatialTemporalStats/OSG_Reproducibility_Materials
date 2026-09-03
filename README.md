@@ -110,26 +110,35 @@ Figure 2 illustrates Slepian bases and eigenvalues in the Slepian concentration 
 #### Reproduce Figure 3 in Section 3.1
 Figure 3 demonstrates the performance of Slepian bases. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 4.95 minutes. For more detailed code and computational time, please refer to the file "Slepian_Performance.R" in the sub-repository "Slepian_ARP". 
 
-#### Reproduce Figures 4-5 in Section 4.2 (and Figure S6 and Table S3 in Section S4.2)
-Figures 4-5, S6, and Table S3 demonstrate the estimates and updates of parameters in OSG-Long. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 10.75 hours, with most of the time spent on evaluating FSG and OSG‑Long. Constructing both SGs and generating emulations require only about 1.35 hours. For more detailed code and computational time, please refer to the files "Case_Studies/FSG/FSG.R", "Case_Studies/Scenario1_OSG_Long/Scenario1_OSG_Long.R", and "Case_Studies/Scenario1_OSG_Long/Plot_estimates_OSG_Long.R".
+#### Reproduce Figures 4-5 in Section 4.2 (and Figure S8 and Table S3 in Section S4.2)
+Figures 4-5, S8, and Table S3 demonstrate the estimates and updates of parameters in OSG-Long. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 10.75 hours, with most of the time spent on evaluating FSG and OSG‑Long. Constructing both SGs and generating emulations require only about 1.35 hours. For more detailed code and computational time, please refer to the files "Case_Studies/FSG/FSG.R", "Case_Studies/Scenario1_OSG_Long/Scenario1_OSG_Long.R", and "Case_Studies/Scenario1_OSG_Long/Plot_estimates_OSG_Long.R".
 
-#### Reproduce Figures 7-8 in Section 4.3 (and Figures S8-9 in Section S4.3)
-Figures 7-8 and S8-9 demonstrate the estimates and updates of parameters in OSG-Short. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 5.51 hours, with most of the time spent on evaluating OSG‑Short. Constructing OSG-Short and generating emulations require only about 48.95 minutes. For more detailed code and computational time, please refer to the files "Case_Studies/Scenario2_OSG_Short/Scenario2_OSG_Short.R", and "Case_Studies/Scenario2_OSG_Short/Plot_estimates_OSG_Short.R".
+#### Reproduce Figures 7-8 in Section 4.3 (and Figures S10-11 in Section S4.3)
+Figures 7-8 and S10-11 demonstrate the estimates and updates of parameters in OSG-Short. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 5.51 hours, with most of the time spent on evaluating OSG‑Short. Constructing OSG-Short and generating emulations require only about 48.95 minutes. For more detailed code and computational time, please refer to the files "Case_Studies/Scenario2_OSG_Short/Scenario2_OSG_Short.R", and "Case_Studies/Scenario2_OSG_Short/Plot_estimates_OSG_Short.R".
 
-#### Reproduce Figure 6 in Section 4.2 and Figure 9 in Section 4.3 (and Figure S7 in Section S4.2 and Figures S10-11 in Section S4.3)
-Figures 6, 9, S7, S10, and S11 demonstrate the emulation performance of FSG, OSG-Long, and OSG-Short. Please refer to the "Wrapper.R" file for its reproducibility command. With outputs in sub-repositories "Case_Studies/FSG", "Case_Studies/Scenario1_OSG_Long", and "Case_Studies/Scenario2_OSG_Short", the total computational time is approximately 30.07 seconds. For more detailed code, please refer to the files "Case_Studies/Plot_emulation_performance.R".
+#### Reproduce Figure 6 in Section 4.2 and Figure 9 in Section 4.3 (and Figure S9 in Section S4.2 and Figures S12-13 in Section S4.3)
+Figures 6, 9, S9, S12, and S13 demonstrate the emulation performance of FSG, OSG-Long, and OSG-Short. Please refer to the "Wrapper.R" file for its reproducibility command. With outputs in sub-repositories "Case_Studies/FSG", "Case_Studies/Scenario1_OSG_Long", and "Case_Studies/Scenario2_OSG_Short", the total computational time is approximately 30.07 seconds. For more detailed code, please refer to the files "Case_Studies/Plot_emulation_performance.R".
 
-#### Reproduce Table 2 in Section 4.3 (and Figure S5 in Section S4.1)
-Table 2 demonstrates the storage demands of FSG, OSG-Long, and OSG-Short construction. Figure S5 compares storage of training data and SG parameters. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.31 seconds. For more detailed code, please refer to the file "Storage.R" in the sub-repository "Case_Studies". 
+#### Reproduce Table 2 in Section 4.3 (and Figure S7 in Section S4.1)
+Table 2 demonstrates the storage demands of FSG, OSG-Long, and OSG-Short construction. Figure S7 compares storage of training data and SG parameters. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.31 seconds. For more detailed code, please refer to the file "Storage.R" in the sub-repository "Case_Studies". 
 
-#### Reproduce (Figures S2-3 in Section S4.1)
-Figures S2-3 help to select the number of Slepian bases $A$. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.67 hours. For more detailed code and computational time, please refer to the file "ChooseA.R" in the sub-repository "Case_Studies/Tuning_Parameters".  
+#### Reproduce (Figures S2 in Section S3.1)
+Figure S2 shows the empirical directional variogram of random effects. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 9.34 seconds. For detailed code, please refer to the file "Variogram.R" in the sub-repository "Data_Demonstration".
 
-#### Reproduce (Figure S4 in Section S4.1)
-Figure S4 helps to select the order $P$ of the VAR model. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.26 hours. For more detailed code and computational time, please refer to the file "ChooseP.R" in the sub-repository "Case_Studies/Tuning_Parameters".    
+#### Reproduce (Figures S3 in Section S3.2)
+Figure S3 provides a sensitivity analysis of Slepian concentration level threshold $\lambda_A$. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately X seconds. For detailed code, please refer to the file "Threshold.R" in the sub-repository "Slepian_ARP".
 
-#### Reproduce (Figure S12 in Section S5)
-Figure S12 demonstrates the performance of VAE trained by initial data blocks covering the first month, the first year, and the first nine years, respectively. Please refer to the "Wrapper.R" file for its reproducibility command. For more detailed code, please refer to the file "VAE_Performance.R" in the sub-repository "VAE". 
+#### Reproduce (Figures S4-5 in Section S4.1)
+Figures S4-5 help to select the number of Slepian bases $A$. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.67 hours. For more detailed code and computational time, please refer to the file "ChooseA.R" in the sub-repository "Case_Studies/Tuning_Parameters".  
+
+#### Reproduce (Figure S6 in Section S4.1)
+Figure S6 helps to select the order $P$ of the VAR model. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.26 hours. For more detailed code and computational time, please refer to the file "ChooseP.R" in the sub-repository "Case_Studies/Tuning_Parameters".    
+
+#### Reproduce (Figure S14 in Section S4.4)
+Figure S14 illustrates Monte Carlo assessment of emulation variability. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 36 hours. For detailed code, please refer to the files "MC_FSG.R", "MC_OSG_Long.R", and "MC_OSG_Short.R" in the sub-repository "Case_Studies/MC".
+
+#### Reproduce (Figure S15 in Section S5)
+Figure S15 demonstrates the performance of VAE trained by initial data blocks covering the first month, the first year, and the first nine years, respectively. Please refer to the "Wrapper.R" file for its reproducibility command. For more detailed code, please refer to the file "VAE_Performance.R" in the sub-repository "VAE". 
 
 ## Supporting Software Requirement
 #### Version of primary software used
