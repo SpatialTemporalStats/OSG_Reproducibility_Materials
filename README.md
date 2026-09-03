@@ -167,5 +167,6 @@ The computational times (seconds) for the main steps of the workflow obtained un
 | OSG-Short construction (*116*) | $7632.07$ | $1012.96$ | $2152.60$ |
 | Emulation (*86*, *95*, *116*) | NA | $578.48$ | $784.49$ |
 | Evaluation (*86*, *95*, *116*) | NA | $12288.83$ | $16896.28$ |
+
 As shown in the table, the MacBook Pro with 16 GB of memory fails to construct the FSG because of the memory limitation. In contrast, both OSG-Long and OSG-Short are successfully constructed under this memory-constrained environment. However, the workflow stops at the emulation stage because of the same memory limitation. On the university server, all three SGs are successfully constructed, emulated, and evaluated.
 
