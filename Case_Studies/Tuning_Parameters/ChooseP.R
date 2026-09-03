@@ -1,5 +1,5 @@
 ################################################################################
-# This file includes all steps to reproduce Figure S4                          #
+# This file includes all steps to reproduce Figure S6                          #
 ################################################################################
 # Packages, functions, and data
 # library(R.matlab)
@@ -123,9 +123,9 @@ PACF.vu=PACF.vu/R
 
 
 
-###### Part 3. Reproduce Figure S4
+###### Part 3. Reproduce Figure S6
 # t1=proc.time()[[3]]
-# Plot Figure S4(a)
+# Plot Figure S6(a)
 dataF=data.frame(V1=rep(1:Q.sl,each=Q.sl),V2=rep(seq(-1,-Q.sl,by=-1),times=Q.sl),
                  V3=c(PACF.u[1,,]),V4=c(PACF.u[2,,]),
                  V5=c(PACF.u[3,,]),V6=c(PACF.u[4,,]))
@@ -187,7 +187,7 @@ PT4=ggplot()+xlab(" ")+ylab(" ")+
                    legend.key.height=unit(0.8,"line"))
 print(PT1+PT2+PT3+PT4+plot_layout(ncol=4))     # 9.00*2.00
 
-# Plot Figure S4(b)
+# Plot Figure S6(b)
 dataF=data.frame(V1=rep(1:Q.sl,each=Q.sl),V2=rep(seq(-1,-Q.sl,by=-1),times=Q.sl),
                  V3=c(PACF.v[1,,]),V4=c(PACF.v[2,,]),
                  V5=c(PACF.v[3,,]),V6=c(PACF.v[4,,]))
@@ -249,7 +249,7 @@ PT4=ggplot()+xlab(" ")+ylab(" ")+
                    legend.key.height=unit(0.8,"line"))
 print(PT1+PT2+PT3+PT4+plot_layout(ncol=4))   # 9.00*2.00
 
-# Plot Figure S4(c)
+# Plot Figure S6(c)
 dataF=data.frame(V1=rep(1:Q.sl,each=Q.sl),V2=rep(seq(-1,-Q.sl,by=-1),times=Q.sl),
                  V3=c(PACF.uv[1,,]),V4=c(PACF.uv[2,,]),
                  V5=c(PACF.uv[3,,]),V6=c(PACF.uv[4,,]))
@@ -311,7 +311,7 @@ PT4=ggplot()+xlab(" ")+ylab(" ")+
                    legend.key.height=unit(0.8,"line"))
 print(PT1+PT2+PT3+PT4+plot_layout(ncol=4))
 
-# Plot Figure S4(d)
+# Plot Figure S6(d)
 dataF=data.frame(V1=rep(1:Q.sl,each=Q.sl),V2=rep(seq(-1,-Q.sl,by=-1),times=Q.sl),
                  V3=c(PACF.vu[1,,]),V4=c(PACF.vu[2,,]),
                  V5=c(PACF.vu[3,,]),V6=c(PACF.vu[4,,]))
