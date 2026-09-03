@@ -1,4 +1,4 @@
-# Reproducibility Instrucion for "Online stochastic generators using Slepian bases for regional bivariate wind speed ensembles from ERA5"
+# Reproducibility Instrucion for "An online climate emulator for regional wind ensembles from ERA5"
 This file documents the artifacts associated with the article (i.e., the data and code supporting the computational findings) and describes how to reproduce all figures and results.
 
 ## Article Overview
