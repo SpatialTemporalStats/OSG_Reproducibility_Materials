@@ -148,9 +148,9 @@ R version 3.6.3 (2020-02-29)
 here(1.0.1), ncdf4(1.19), sp(1.4-6), ggplot2(3.5.1), maps(3.4.0), moments(0.14.1), R.matlab(3.6.2), LambertW(0.6.9-1), fdaoutlier(0.2.0), matrixStats(1.5.0), approxOT(1.0.2), patchwork(1.2.0), scales(1.3.0), dplyr(1.1.4), reticulate(1.14)
 
 #### Reproducibility Testing on Different Computing Environments
-The code and workflow have been tested across two additional computing environments with more recent versions of R and the required packages. Detailed system and software configurations for these two new environments, together with those of the previously used workstation, are provided in the table below. 
-| Header 1 | Header 2 | Header 3 |
-| -------- | -------- | -------- |
-| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |
-| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |
+The code and workflow have been tested across two additional computing environments: (1) a MacBook Pro 14 with an Apple M1 Pro chip and 16 GB of memory, and (2) a university computing server allocated 18 CPUs and approximately 72 GB of memory in total. Both environments used recent versions of R and the required packages. Detailed system and software configurations for these two new environments, together with those of the previously used workstation, are provided in the table below. 
+| | MacBook Pro | University Server | Previous Workstation |
+| -------- | -------- | -------- | -------- |
+| Processor | Apple M1 Pro | Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz | Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz |
+
 
