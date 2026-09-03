@@ -39,8 +39,9 @@ This sub-repository is used to store the downloaded ERA5 ensemble data and to pr
 <!-- >* "WindSpeeduv_ARP_2014.nc" -- "WindSpeeduv_ARP_2023.nc": downloaded ERA5 ensemble data used in this work -->
 
 #### Data_Demonstration
-This sub-repository provides the R script for reproducing Figure 1, which demonstrates several statistical characteristics of the u- and v-component wind speed ERA5 ensembles.
+This sub-repository provides the R scripts for reproducing Figures 1 and S2, which demonstrates several statistical characteristics of the u- and v-component wind speed ERA5 ensembles.
 * "Data_Demonstration.R": R script for reproducing Figure 1
+* "Variogram.R": R script for reproducing Figure S2
 
 #### Functions
 This sub-repository contains R scripts for several frequently used functions.
@@ -48,9 +49,10 @@ This sub-repository contains R scripts for several frequently used functions.
 * "InverseTH.R": function for performing the inverse Tukey h transformation
 
 #### Slepian_ARP
-This sub-repository provides the R scripts for reproducing Figures 2 and 3, which demonstrates Slepian bases in the Slepian concentration problem and their performance. Additionally, this sub-repository is used to store the downloaded Slepian bases.
+This sub-repository provides the R scripts for reproducing Figures 2 and 3, which demonstrates Slepian bases in the Slepian concentration problem and their performance. It also provides the R script for Figure S3. Additionally, this sub-repository is used to store the downloaded Slepian bases.
 * "Slepian_Demonstration.R": R script for reproducing Figure 2
 * "Slepian_Performance.R": R script for reproducing Figure 3
+* "Threshold.R": R script for reproducing Figure S3
 <!-- >* "Basis_reg_eig_value_181_real.mat" and others: downloaded eigenvalues in the Slepian concentration problem -->
 <!-- >* "Slepian_spatial_181.mat" and others: downloaded Slepian bases in the Slepian concentration problem -->
 
