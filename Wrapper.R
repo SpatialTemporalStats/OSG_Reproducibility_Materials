@@ -72,8 +72,8 @@ source(here("Slepian_ARP","Slepian_Performance.R"))
 
 
 
-######   Figures 4-5 in Section 4.2 (and Figure S6 and Table S3 in Section S4.2)   ######################
-# Figures 4-5 and S5 demonstrate the estimates and updates of parameters in OSG-Long.                   # 
+######   Figures 4-5 in Section 4.2 (and Figure S8 and Table S3 in Section S4.2)   ######################
+# Figures 4-5 and S8 demonstrate the estimates and updates of parameters in OSG-Long.                   # 
 # Table S3 shows relative Frobenius distances (RFDs) between estimates in OSG-Long and those in FSG.    #
 # Detailed Code and computational time for FSG's construction, emulation, and assessment can be found   #
 # in "Case_Studies/FSG/FSG.R".                                                                          # 
@@ -99,14 +99,14 @@ source(here("Case_Studies/Scenario1_OSG_Long","Scenario1_OSG_Long.R"))
 # Total computational time: about 5.37 hours 
 
 
-# Finally, reproduce Figures 4-5, Figure S6 and Table S3
+# Finally, reproduce Figures 4-5, Figure S8 and Table S3
 source(here("Case_Studies/Scenario1_OSG_Long","Plot_estimates_OSG_Long.R"))
 # Computational time: 12.559 seconds
 
 
 
-######   Figures 7-8 in Section 4.3 (and Figures S8-9 in Section S4.3)   ################################
-# Figures 7-8 and S8-9 demonstrate the estimates and updates of parameters in OSG-Short.                #                                           # 
+######   Figures 7-8 in Section 4.3 (and Figures S10-11 in Section S4.3)   ##############################
+# Figures 7-8 and S10-11 demonstrate the estimates and updates of parameters in OSG-Short.              #                                           # 
 # Detailed code and computational time for OSG-Short's construction, emulation, and assessment can be   #
 # found in "Case_Studies/Scenario2_OSG_Short/Scenario2_OSG_Short.R".                                    # 
 # Code for ploting figures can be found in "Case_Studies/Scenario2_OSG_Short/Plot_estimates_OSG_Short.R".# 
@@ -120,17 +120,17 @@ source(here("Case_Studies/Scenario2_OSG_Short","Scenario2_OSG_Short.R"))
 # Total computational time: about 5.51 hours 
 
 
-# Then, reproduce Figures 7-8 and S8-9
+# Then, reproduce Figures 7-8 and S10-11
 source(here("Case_Studies/Scenario2_OSG_Short","Plot_estimates_OSG_Short.R"))
 # Computational time: 15.631 seconds
 
 
 
 ######   Figure 6 in Section 4.2, Figure 9 in Section 4.3   #############################################
-######   (and Figure S7 in Section S4.2 and Figures S10-11 in Section S4.3)   ###########################
-# Figures 6 and S7 demonstrate the emulation performance of OSG-Long.                                   # 
-# Figures 9 and S10 demonstrate the emulation performance of OSG-Short.                                 #    
-# Figure S11 compares emulation performances of FSG, OSG-Long, and OSG-Short using boxplots.            #  
+######   (and Figure S9 in Section S4.2 and Figures S12-13 in Section S4.3)   ###########################
+# Figures 6 and S9 demonstrate the emulation performance of OSG-Long.                                   # 
+# Figures 9 and S12 demonstrate the emulation performance of OSG-Short.                                 #    
+# Figure S13 compares emulation performances of FSG, OSG-Long, and OSG-Short using boxplots.            #  
 # Code for ploting figures can be found in "Case_Studies/Plot_emulation_performance.R".                 # 
 #########################################################################################################
 source(here("Case_Studies","Plot_emulation_performance.R"))
@@ -138,9 +138,9 @@ source(here("Case_Studies","Plot_emulation_performance.R"))
 
 
 
-######   Table 2 in Section 4.3 (and Figure S5 in Section S4.1)   #######################################
+######   Table 2 in Section 4.3 (and Figure S7 in Section S4.1)   #######################################
 # Table 2 demonstrates the storage demands of FSG, OSG-Long, and OSG-Short's construction.              #
-# Figure S5 compares storage of training data and SG parameters.                                        #
+# Figure S7 compares storage of training data and SG parameters.                                        #
 # Code can be found in "Case_Studies/Storage.R".                                                        #
 #########################################################################################################
 source(here("Case_Studies","Storage.R"))
@@ -148,8 +148,26 @@ source(here("Case_Studies","Storage.R"))
 
 
 
-######   (Figures S2-3 in Section S4.1)   ###############################################################
-# Figures S2-3 help to select the number of Slepian bases A.                                            #
+######   (Figures S2 in Section S3.1)   ################################################################
+# Figure S2 shows the empirical directional variogram of random effects.                               #
+# Code can be found in "Data_Demonstration/Variogram.R".                                               #
+########################################################################################################
+source(here("Data_Demonstration","Variogram.R"))
+# Computational time: 9.344 seconds (by MacBook Pro 14 with an Apple M1 Pro chip and 16 GB of memory)
+
+
+
+######   (Figures S3 in Section S3.2)   ################################################################
+# Figure S3 provides a sensitivity analysis of Slepian concentration level threshold \lambda_A.        #
+# Code can be found in "Slepian_ARP/Threshold.R".                                                      #
+# ######################################################################################################
+source(here("Slepian_ARP","Threshold.R"))
+# Computational time:
+
+
+
+######   (Figures S4-5 in Section S4.1)   ###############################################################
+# Figures S4-5 help to select the number of Slepian bases A.                                            #
 # Detailed code and computational time can be found in "Case_Studies/Tuning_Parameters/ChooseA.R".      #
 #########################################################################################################
 source(here("Case_Studies/Tuning_Parameters","ChooseA.R"))
@@ -157,8 +175,8 @@ source(here("Case_Studies/Tuning_Parameters","ChooseA.R"))
 
 
 
-######   (Figure S4 in Section S4.1)   ##################################################################
-# Figure S4 helps to select the order P of VAR model.                                                   #
+######   (Figure S6 in Section S4.1)   ##################################################################
+# Figure S6 helps to select the order P of VAR model.                                                   #
 # Detailed code and computational time can be found in "Case_Studies/Tuning_Parameters/ChooseP.R".      #
 #########################################################################################################
 source(here("Case_Studies/Tuning_Parameters","ChooseP.R"))
@@ -166,8 +184,25 @@ source(here("Case_Studies/Tuning_Parameters","ChooseP.R"))
 
 
 
-######   (Figure S12 in Section S5)   ##################################################################
-# Figure S12 demonstrates the performance of VAE trained by initial data block from the first month,   #
+######   (Figures S14 in Section S4.4)   ################################################################
+# Figure S14 illustrates Monte Carlo assessment of emulation variability.                               #
+# Code can be found in "Case_Studies/MC/MC_FSG.R", "Case_Studies/MC/MC_OSG_Long.R", and                 #
+# "Case_Studies/MC/MC_OSG_Short.R". Figure S14 can be reproduced by "Case_Studies/MC/MC_Plot.R".        #                                                      #
+# #######################################################################################################
+# Please run the following three files nine times to obtain additional emulation results by changing seeds.
+source(here("Case_Studies/MC","MC_FSG.R")) 
+source(here("Case_Studies/MC","MC_OSG_Long.R"))
+source(here("Case_Studies/MC","MC_OSG_Short.R"))
+# Computational time: about 1 hour 20 mins for running each file each time
+
+
+# Then, reproduce Figure S14
+source(here("Case_Studies/MC","MC_Plot.R"))
+
+
+
+######   (Figure S15 in Section S5)   ##################################################################
+# Figure S15 demonstrates the performance of VAE trained by initial data block from the first month,   #
 # the first year, and the first nine years, respectively.                                              #
 # Detailed code can be found in "VAE/VAE_Performance.R".                                               #
 ########################################################################################################
