@@ -135,7 +135,7 @@ Figures S4-5 help to select the number of Slepian bases $A$. Please refer to the
 Figure S6 helps to select the order $P$ of the VAR model. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.26 hours. For more detailed code and computational time, please refer to the file "ChooseP.R" in the sub-repository "Case_Studies/Tuning_Parameters".    
 
 #### Reproduce (Figure S14 in Section S4.4)
-Figure S14 illustrates Monte Carlo assessment of emulation variability. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 36 hours. For detailed code, please refer to the files "MC_FSG.R", "MC_OSG_Long.R", and "MC_OSG_Short.R" in the sub-repository "Case_Studies/MC".
+Figure S14 illustrates Monte Carlo assessment of emulation variability. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 36 hours. For detailed code, please refer to the files "MC_FSG.R", "MC_OSG_Long.R", "MC_OSG_Short.R", and "MC_Plot.R" in the sub-repository "Case_Studies/MC".
 
 #### Reproduce (Figure S15 in Section S5)
 Figure S15 demonstrates the performance of VAE trained by initial data blocks covering the first month, the first year, and the first nine years, respectively. Please refer to the "Wrapper.R" file for its reproducibility command. For more detailed code, please refer to the file "VAE_Performance.R" in the sub-repository "VAE". 
@@ -146,4 +146,11 @@ R version 3.6.3 (2020-02-29)
 
 #### Libraries and dependencies used by the code
 here(1.0.1), ncdf4(1.19), sp(1.4-6), ggplot2(3.5.1), maps(3.4.0), moments(0.14.1), R.matlab(3.6.2), LambertW(0.6.9-1), fdaoutlier(0.2.0), matrixStats(1.5.0), approxOT(1.0.2), patchwork(1.2.0), scales(1.3.0), dplyr(1.1.4), reticulate(1.14)
+
+#### Reproducibility Testing on Different Computing Environments
+The code and workflow have been tested across two additional computing environments with more recent versions of R and the required packages. Detailed system and software configurations for these two new environments, together with those of the previously used workstation, are provided in the table below. 
+| Header 1 | Header 2 | Header 3 |
+| -------- | -------- | -------- |
+| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |
+| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |
 
