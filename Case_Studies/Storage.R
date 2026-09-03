@@ -1,5 +1,5 @@
 ################################################################################
-# This file includes all steps to reproduce Table 2 and Figure S5              #
+# This file includes all steps to reproduce Table 2 and Figure S7              #
 ################################################################################
 # Necessary packages
 # library(ggplot2)
@@ -42,13 +42,13 @@ print(C.cp+(Q.sl*loclen+4*(P+1)*Q.sl^2)*8/1e9+C4(31*8))
 
 
 
-###### Part 2. Reproduce Figure S5
+###### Part 2. Reproduce Figure S7
 # Storage of training data with R ensembles and TT time points
 RAD.str=function(R,TT){return(2*R*loclen*TT*8/1e9)}
 # Storage of SGs with TT time points
 SG.str=function(TT){return((4*loclen*TT+4*Q.sl+4*(P+1)*Q.sl*Q.sl)*8/1e9)}
 
-# Plot Figure S5(a)
+# Plot Figure S7(a)
 TTseq=(1:80)*365*8
 dataF=data.frame(Time=rep(1:80,times=2),
                  Storage=c(sapply(TTseq,function(TT){return(RAD.str(10,TT))}),
@@ -73,7 +73,7 @@ PT=ggplot()+
                    legend.key.height=unit(1.3,"line"))
 print(PT)          # 4.83*2.63
 
-# Plot Figure S5(b)
+# Plot Figure S7(b)
 Rseq=2:100
 dataF=data.frame(Time=rep(Rseq,times=2),
                  Storage=c(sapply(Rseq,function(R){return(RAD.str(R,10*365*8))}),
