@@ -1,5 +1,5 @@
 #######################################################################################
-# This file reproduces Figures 4-5, S6, and Table S3                                  #
+# This file reproduces Figures 4-5, S8, and Table S3                                  #
 #######################################################################################
 # Please ensure that you have run the Rscripts "FSG.R" and "Scenario1_OSG_Long.R" and saved all outputs.
 Col=c("#3288BD","#66C2A5","#ABDDA4","#E6F598","#FEE08B","#FDAE61","#F46D43","#D53E4F")
@@ -116,7 +116,7 @@ print(PT)
 
 
 
-###### Part 2. Reproduce Figures 5 and S6
+###### Part 2. Reproduce Figures 5 and S8
 # Plot Figure 5(a) 
 Phi.hat.full=readMat(here("Case_Studies/FSG","Phihatfull.mat"))$Phihatfull
 Phi.hat.online.1=readMat(here("Case_Studies/Scenario1_OSG_Long","Phihat_online_1.mat"))$Phihatonline
@@ -178,7 +178,7 @@ PT.full=ggplot()+xlab(" ")+ylab(" ")+
 print(PT.0+PT.B+PT.full)  # 6.46*2.33 
 
 
-# Plot Figure S6
+# Plot Figure S8
 PT.0=ggplot()+xlab(" ")+ylab(" ")+
   geom_raster(aes(x=V1,y=V2,fill=sign(Vb02)*(abs(Vb02))^(1/2)),data=dataF)+
   scale_fill_gradient2(low = "#0072B2", mid = "white",high ="#E41A1C",
