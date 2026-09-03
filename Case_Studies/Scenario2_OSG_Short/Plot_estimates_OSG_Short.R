@@ -1,5 +1,5 @@
 #######################################################################################
-# This file reproduces Figures 7-8 and S8-9                                           #
+# This file reproduces Figures 7-8 and S10-11                                         #
 #######################################################################################
 # Please ensure that you have run the Rscripts "FSG.R", "Scenario1_OSG_Long.R",  
 # and "Scenario2_OSG_Short.R", and saved all outputs.
@@ -22,7 +22,7 @@ Q.sl=300
 
 
 
-###### Part 1. Reproduce Figures 7 and S8
+###### Part 1. Reproduce Figures 7 and S10
 # Plot Figures 7(a) and S8(a)
 TGHpara.u.online=readMat(here("Case_Studies/Scenario2_OSG_Short","TGHpara_u_all_2.mat"))$TGHparauall
 TGHpara.v.online=readMat(here("Case_Studies/Scenario2_OSG_Short","TGHpara_v_all_2.mat"))$TGHparavall
@@ -81,7 +81,7 @@ PT=ggplot(data=dataF,aes(x=aseq,y=res,color=b))+
 print(PT)          # 4.15*3.10
 
 
-# Plot Figures 7(b) and S8(b)
+# Plot Figures 7(b) and S10(b)
 TGHpara.u.full=read.csv(here("Case_Studies/FSG","TGHparaufull.csv"))[,-1]
 TGHpara.v.full=read.csv(here("Case_Studies/FSG","TGHparavfull.csv"))[,-1]
 dataF=data.frame(aseq=rep(0:B,times=4),
@@ -201,7 +201,7 @@ print(PT)
 
 
 
-###### Part 2. Reproduce Figures 8 and S9
+###### Part 2. Reproduce Figures 8 and S11
 # Plot Figure 8(a)
 Phi.hat.full=readMat(here("Case_Studies/FSG","Phihatfull.mat"))$Phihatfull
 Phi.hat.online=readMat(here("Case_Studies/Scenario2_OSG_Short","Phihat_online_2.mat"))$Phihatonline
@@ -260,7 +260,7 @@ PT.full=ggplot()+xlab(" ")+ylab(" ")+
 print(PT.0+PT.B+PT.full)      # 8.95*3.00
 
 
-# Plot Figure S9
+# Plot Figure S11
 PT.0=ggplot()+xlab(" ")+ylab(" ")+
   geom_raster(aes(x=V1,y=V2,fill=sign(Vb02)*(abs(Vb02))^(1/2)),data=dataF)+
   scale_fill_gradient2(low = "#0072B2", mid = "white",high ="#E41A1C",
