@@ -156,15 +156,16 @@ The code and workflow have been tested across two additional computing environme
 | R version | 4.6.1 (2026-06-24) | 4.5.0 (2025-04-11) | 3.6.3 (2020-02-29) |
 | Package version| here(1.0.2), ncdf4(1.24), sp(2.2-3), ggplot2(4.0.3), maps(3.4.3), dplyr(1.2.1), R.matlab(3.7.0), LambertW(0.6.9-2), fdaoutlier(0.2.1), matrixStats(1.5.0), approxOT(1.2), patchwork(1.3.2), scales(1.4.0),moments(0.14.1) | here(1.0.1), ncdf4(1.24), sp(2.2-0), ggplot2(3.5.2), maps(3.4.2.1), dplyr(1.1.4), R.matlab(3.6.2), LambertW(0.6.9-2), fdaoutlier(0.2.1), matrixStats(1.5.0), approxOT(1.2), patchwork(1.3.2), scales(1.4.0), moments(0.14.1)| here(1.0.1), ncdf4(1.19), sp(1.4-6), ggplot2(3.5.1), maps(3.4.0), dplyr(1.1.4), R.matlab(3.6.2), LambertW(0.6.9-1), fdaoutlier(0.2.0), matrixStats(1.5.0), approxOT(1.0.2), patchwork(1.2.0), scales(1.3.0), moments(0.14.1)|
 
-The computational times (seconds) for the main steps of the workflow obtained under different computational environments are reported below. Since all SGs share the same emulation and evaluation procedures, the reported times are averaged across all SGs.
+The computational times (seconds) for the main steps of the workflow obtained under different computational environments are reported below. Since all SGs share the same emulation and evaluation procedures, the reported times are averaged across all SGs. 
 | Step (*line in ``Wrapper.R"*) | MacBook Pro | University Server | Previous Workstation |
 | -------- | -------- | -------- | -------- |
-| Data demonstration (*52*) | $481.651$  | $528.707$  | $1589.505$ |
-| Slepian demonstration (*61*) | $2.896$ | $2.62$ | $2.780$ |
-| Slepian performance (*70*) | $151.011$ | $180.092$ | $296.714$ |
-| FSG construction (*86*) | NA | $603.862 | $1637.935$ |
-| OSG-Long construction (*95*) | $5934.934$ | $650.706$ | $1654.414$ |
-| OSG-Short construction (*116*) | $7632.069$ | $1012.955$ | $2152.603$ |
-| Emulation (*86*, *95*, *116*) | NA | $578.483$ | $784.485$ |
+| Data demonstration (*52*) | $481.65$  | $528.71$  | $1589.51$ |
+| Slepian demonstration (*61*) | $2.90$ | $2.62$ | $2.78$ |
+| Slepian performance (*70*) | $151.01$ | $180.09$ | $296.71$ |
+| FSG construction (*86*) | NA | $603.86$ | $1637.94$ |
+| OSG-Long construction (*95*) | $5934.93$ | $650.71$ | $1654.41$ |
+| OSG-Short construction (*116*) | $7632.07$ | $1012.96$ | $2152.60$ |
+| Emulation (*86*, *95*, *116*) | NA | $578.48$ | $784.49$ |
 | Evaluation (*86*, *95*, *116*) | NA | $12288.83$ | $16896.28$ |
+As shown in the table, the MacBook Pro with 16 GB of memory fails to construct the FSG because of the memory limitation. In contrast, both OSG-Long and OSG-Short are successfully constructed under this memory-constrained environment. However, the workflow stops at the emulation stage because of the same memory limitation. On the university server, all three SGs are successfully constructed, emulated, and evaluated.
 
