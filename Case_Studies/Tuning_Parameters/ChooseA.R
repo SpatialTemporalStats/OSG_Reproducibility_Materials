@@ -1,5 +1,5 @@
 ################################################################################
-# This file includes all steps to reproduce Figures S2 and S3                  #
+# This file includes all steps to reproduce Figures S4 and S5                  #
 ################################################################################
 # Packages, functions, and data
 # library(R.matlab)
@@ -204,9 +204,9 @@ for(k in 1:length(Qseq)){
 
 
 
-###### Part 2. Reproduce Figures S2 and S3
+###### Part 2. Reproduce Figures S4 and S5
 Aseq=25*(0:12)+100
-# Plot Figure S2(a)
+# Plot Figure S4(a)
 dataF=data.frame(Iuq=c(as.matrix((Iuq.u+Iuq.v)/2)),aseq=as.factor(rep(Aseq,each=length(id.ARP))))
 PT=ggplot(data = dataF,aes(x=aseq,y=Iuq),color="#3288BD")+geom_boxplot()+
   theme_bw()+theme(panel.border = element_rect(colour = "black"),
@@ -223,7 +223,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Iuq),color="#3288BD")+geom_boxplot()+
   geom_hline(yintercept = 1,linetype=2,col="red")
 print(PT)
 
-# Plot Figure S2(b)
+# Plot Figure S4(b)
 dataF=data.frame(Ibd=c(as.matrix(Ibc[1:length(id.ARP),]/Ibc[-(1:length(id.ARP)),])),aseq=as.factor(rep(Aseq,times=length(id.ARP))))
 PT=ggplot(data = dataF,aes(x=aseq,y=Ibd))+geom_boxplot()+
   theme_bw()+theme(panel.grid.major = element_blank(),
@@ -242,7 +242,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Ibd))+geom_boxplot()+
   geom_hline(yintercept = 1,linetype=2,colour="red")
 print(PT)
 
-# Plot Figure S2(c)
+# Plot Figure S4(c)
 dataF=data.frame(Itc1=c(as.matrix(0.5*Itc1.u[1:length(id.ARP),]/Itc1.u[-(1:length(id.ARP)),]+
                           0.5*Itc1.v[1:length(id.ARP),]/Itc1.v[-(1:length(id.ARP)),])),
                  aseq=as.factor(rep(Aseq,each=length(id.ARP))))
@@ -263,7 +263,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Itc1))+geom_boxplot()+
   geom_hline(yintercept = 1,linetype=2,colour="red")
 print(PT)
 
-# Plot Figure S2(d)
+# Plot Figure S4(d)
 dataF=data.frame(Itc2=c(as.matrix(0.5*Itc2.u[1:length(id.ARP),]/Itc2.u[-(1:length(id.ARP)),]+
                           0.5*Itc2.v[1:length(id.ARP),]/Itc2.v[-(1:length(id.ARP)),])),
                  aseq=as.factor(rep(Aseq,each=length(id.ARP))))
@@ -284,7 +284,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Itc2))+geom_boxplot()+
   geom_hline(yintercept = 1,linetype=2,colour="red")
 print(PT)
 
-# Plot Figure S2(e)
+# Plot Figure S4(e)
 dataF=data.frame(Itp=c(Itp[,1,1:length(id.ARP)]/Itp[,1,-(1:length(id.ARP))]),
                  aseq=as.factor(rep(Aseq,times=length(id.ARP))))
 PT=ggplot(data = dataF,aes(x=aseq,y=Itp))+geom_boxplot()+
@@ -304,7 +304,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Itp))+geom_boxplot()+
   xlab(expression(A))+ylab(expression(I[tp]^{"[0,5)"}))
 print(PT)
 
-# Plot Figure S2(f)
+# Plot Figure S4(f)
 dataF=data.frame(Itp=c(Itp[,2,1:length(id.ARP)]/Itp[,2,-(1:length(id.ARP))]),
                  aseq=as.factor(rep(Aseq,times=length(id.ARP))))
 PT=ggplot(data = dataF,aes(x=aseq,y=Itp))+geom_boxplot()+
@@ -324,7 +324,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Itp))+geom_boxplot()+
   xlab(expression(A))+ylab(expression(I[tp]^{"[5,10)"}))
 print(PT)
 
-# Plot Figure S2(g)
+# Plot Figure S4(g)
 dataF=data.frame(Itp=c(Itp[,3,1:length(id.ARP)]/Itp[,3,-(1:length(id.ARP))]),
                  aseq=as.factor(rep(Aseq,times=length(id.ARP))))
 PT=ggplot(data = dataF,aes(x=aseq,y=Itp))+geom_boxplot()+
@@ -344,7 +344,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Itp))+geom_boxplot()+
   xlab(expression(A))+ylab(expression(I[tp]^{"[10,20)"}))
 print(PT)
 
-# Plot Figure S2(h)
+# Plot Figure S4(h)
 dataF=data.frame(Itp=c(Itp[,4,1:length(id.ARP)]/Itp[,4,-(1:length(id.ARP))]),
                  aseq=as.factor(rep(Aseq,times=length(id.ARP))))
 PT=ggplot(data = dataF,aes(x=aseq,y=Itp))+geom_boxplot()+
@@ -364,7 +364,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Itp))+geom_boxplot()+
   xlab(expression(A))+ylab(expression(I[tp]^{"[20,"*infinity*")"}))
 print(PT)
 
-# Plot Figure S3(a)
+# Plot Figure S5(a)
 dataF=data.frame(Iwdt=c(as.matrix((Iwdt.u+Iwdt.v)/2)),aseq=as.factor(rep(Aseq,each=length(id.ARP))))
 PT=ggplot(data = dataF,aes(x=aseq,y=Iwdt))+geom_boxplot()+
   #scale_y_continuous(limits=c(0.004,0.075))+
@@ -384,7 +384,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Iwdt))+geom_boxplot()+
   geom_hline(yintercept = 0,linetype=2,col="red")
 print(PT)
 
-# Plot Figure S3(b)
+# Plot Figure S5(b)
 dataF=data.frame(Iwds=c(as.matrix((Iwds.u+Iwds.v)/2)),aseq=as.factor(rep(Aseq,each=T0)))
 PT=ggplot(data = dataF,aes(x=aseq,y=Iwds))+geom_boxplot()+
   #scale_y_continuous(limits=c(0.004,0.075))+
@@ -404,7 +404,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Iwds))+geom_boxplot()+
   geom_hline(yintercept = 0,linetype=2,col="red")
 print(PT)
 
-# Plot Figure S3(c)
+# Plot Figure S5(c)
 dataF=data.frame(Imd=c(0.5*Imd[1:length(id.ARP),]+0.5*Imd[-(1:length(id.ARP)),]),
                  aseq=as.factor(rep(Aseq,each=length(id.ARP))))
 PT=ggplot(data = dataF,aes(x=aseq,y=Imd))+geom_boxplot()+
@@ -424,7 +424,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Imd))+geom_boxplot()+
   geom_hline(yintercept = 0,linetype=2,colour="red")
 print(PT)
 
-# Plot Figure S3(d)
+# Plot Figure S5(d)
 dataF=data.frame(Isdd=c(0.5*Isdd[1:length(id.ARP),]+0.5*Isdd[-(1:length(id.ARP)),]),
                  aseq=as.factor(rep(Aseq,each=length(id.ARP))))
 PT=ggplot(data = dataF,aes(x=aseq,y=Isdd))+geom_boxplot()+
@@ -444,7 +444,7 @@ PT=ggplot(data = dataF,aes(x=aseq,y=Isdd))+geom_boxplot()+
   geom_hline(yintercept = 0,linetype=2,colour="red")
 print(PT)
 
-# Plot Figure S3(e)
+# Plot Figure S5(e)
 dataF=data.frame(lon=rep(Dat.loc.arp[,1],times=2),lat=rep(Dat.loc.arp[,2],times=2),
                  Iuq=c(Iuq.u[,1],Iuq.u[,9]),
                  group=as.factor(rep(c("A=100","A=300"),each=nrow(Dat.loc.arp))))
@@ -466,7 +466,7 @@ PT=ggplot()+facet_wrap(~ group, ncol = 2)+
   labs(fill=expression(I[uq]))+ylab("Latitude")+xlab("Longitude")
 print(PT)
 
-# Plot Figure S3(f)
+# Plot Figure S5(f)
 dataF=data.frame(lon=rep(Dat.loc.arp[,1],times=2),lat=rep(Dat.loc.arp[,2],times=2),
                  Iuq=c(Iwdt.u[,1],Iwdt.u[,9]),
                  group=as.factor(rep(c("A=100","A=300"),each=nrow(Dat.loc.arp))))
