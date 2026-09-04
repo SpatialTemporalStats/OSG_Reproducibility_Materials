@@ -126,7 +126,7 @@ Table 2 demonstrates the storage demands of FSG, OSG-Long, and OSG-Short constru
 Figure S2 shows the empirical directional variogram of random effects. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 9.34 seconds. For detailed code, please refer to the file "Variogram.R" in the sub-repository "Data_Demonstration".
 
 #### Reproduce (Figures S3 in Section S3.2)
-Figure S3 provides a sensitivity analysis of Slepian concentration level threshold $\lambda_A$. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately X seconds. For detailed code, please refer to the file "Threshold.R" in the sub-repository "Slepian_ARP".
+Figure S3 provides a sensitivity analysis of Slepian concentration level threshold $\lambda_A$. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 20.75 seconds. For detailed code, please refer to the file "Threshold.R" in the sub-repository "Slepian_ARP".
 
 #### Reproduce (Figures S4-5 in Section S4.1)
 Figures S4-5 help to select the number of Slepian bases $A$. Please refer to the "Wrapper.R" file for its reproducibility command. The total computational time is approximately 1.67 hours. For more detailed code and computational time, please refer to the file "ChooseA.R" in the sub-repository "Case_Studies/Tuning_Parameters".  
