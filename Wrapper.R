@@ -162,7 +162,7 @@ source(here("Data_Demonstration","Variogram.R"))
 # Code can be found in "Slepian_ARP/Threshold.R".                                                      #
 # ######################################################################################################
 source(here("Slepian_ARP","Threshold.R"))
-# Computational time:
+# Computational time: 20.752 seconds (by MacBook Pro 14 with an Apple M1 Pro chip and 16 GB of memory)
 
 
 
